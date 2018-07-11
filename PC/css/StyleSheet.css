@@ -1,0 +1,371 @@
+html,body,div,span,iframe,map,font,img,a img,samp,strong,hr,
+h1,h2,h3,h4,h5,h6,b,p,blockquote,a,address,code,dl,dt,dd,ol,
+ul,li,form,label,table,tr,td,th,input{padding:0;margin:0;border:0;font-weight:normal;font-size:16px;font-family: Microsoft Yahei, Arial, Helvetica, sans-serif; color:#606060;}
+body{background: #fff;position:relative;min-height:100%;}ul,li{list-style:none;}dl{}.f_l{float:left;}.f_r{float:right;}
+html,div,img{
+    border-image-width:0 !important;
+}
+.m_t_20{
+    margin-top:20px;
+}
+.m_b_20{
+    margin-bottom:20px;
+}
+
+@font-face {
+	font-family: 'Kla_b_i';
+	src: url('../font/Klavika Bold Italic.ttf') format('truetype'),
+        url('../font/Klavika Bold Italic.otf') format('truetype') ;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_b';
+	src: url('../font/Klavika Bold.otf') format('truetype'),
+        url('../font/Klavika Bold.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_l_i';
+	src: url('../font/Klavika Light Italic.otf') format('truetype'),
+        url('../font/Klavika Light Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_l';
+	src: url('../font/Klavika Light.otf') format('truetype'),
+        url('../font/Klavika Light.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_m_i';
+	src: url('../font/Klavika Medium Italic.otf') format('truetype'),
+        url('../font/Klavika Medium Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_m';
+	src: url('../font/Klavika Medium.otf') format('truetype'),
+        url('../font/Klavika Medium.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_r_i';
+	src: url('../font/Klavika Regular Italic.otf') format('truetype'),
+        url('../font/Klavika Regular Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_r';
+	src: url('../font/Klavika Regular.otf') format('truetype'),
+        url('../font/Klavika Regular.ttf') format('truetype');
+	font-style: normal;
+}
+/*首页-顶部*/
+.page_top{
+    width:100%;
+    float:left;
+    min-width:1280px;
+    border-top:15px solid #f50002;
+}
+.page_top .top_box{
+    width:1280px;
+    overflow:hidden;
+    box-sizing:border-box;
+    margin:0 auto;
+    padding:30px 160px;
+}
+.page_top .top_box .top_logo{
+    height:60px;
+    float:left;
+    padding:0 20px;
+    border-left:1px solid #c8c5c4;
+}
+.page_top .top_box .top_logo:first-child{
+    padding-left:0;
+    border-left:0;
+}
+.page_top .top_box .top_right{
+    float:right;
+    padding-top:30px;
+}
+.page_top .top_box .top_right .w_btn{
+    float:right;
+    border:1px solid #c8c5c4;
+    border-radius:2px;
+    background:#fff;
+    padding:0 10px;
+    margin-left:10px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.page_top .top_box .top_right .w_btn img{
+    float:left;
+    height:16px;
+    margin-top:7px;
+    margin-right:6px;
+}
+.page_top .top_box .top_right .w_btn p{
+    float:left;
+    font-size:14px;
+    line-height:28px;
+    color:#595656;
+}
+.page_top .top_box .top_right .r_btn{
+    float:right;
+    background-color:#f50002;
+    border-radius:2px;
+    padding:0 10px;
+    margin-left:10px;
+    font-size:14px;
+    line-height:30px;
+    color:#fff;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.page_top .top_box .top_right .text_btn{
+    float:right;
+    padding:0 10px;
+    margin-left:10px;
+    font-size:14px;
+    line-height:30px;
+    color:#595656;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+/*首页-中间大图*/
+.big_img_box{
+    width:100%;
+    height:400px;
+    float:left;
+    min-width:1280px;
+    background:url(../images/big_img.jpg) no-repeat top center;
+    background-size:auto 400px;
+}
+/*首页-内容*/
+.page_content_box{
+    width:100%;
+    float:left;
+    min-width:1280px;
+}
+.page_content{
+    width:1280px;
+    overflow:hidden;
+    box-sizing:border-box;
+    margin:0 auto;
+}
+.page_content .lesson_list_box{
+    width:1280px;
+    float:left;
+    box-sizing:border-box;
+    background:url(../images/mid_bg.jpg) no-repeat top left #ededed;
+    background-size:100% auto;
+    padding:50px 160px 50px 160px;
+}
+.page_content .lesson_list_box h2,
+.partner_box h2{
+    width:100%;
+    float:left;
+    font-size:18px;
+    color:#231815;
+    line-height:22px;
+    margin-bottom:30px;
+}
+.page_content .lesson_list_box .lesson_div{
+    width:450px;
+    float:left;
+    cursor:pointer;
+    margin-bottom:40px;
+}
+.page_content .lesson_list_box .lesson_div:nth-child(2n){
+    margin-right:30px;
+}
+.page_content .lesson_list_box .lesson_div:nth-child(2n+1){
+    margin-left:30px;
+}
+.page_content .lesson_list_box .lesson_div img{
+    width:100%;
+    float:left;
+}
+.page_content .lesson_list_box .lesson_div .lesson_name{
+    width:100%;
+    float:left;
+    background-color:#fff;
+    border-top:3px solid #f50002;
+    box-sizing:border-box;
+    padding:10px 20px;
+}
+.page_content .lesson_list_box .lesson_div .lesson_name p{
+    width:320px;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#231815;
+    margin-top:14px;
+}
+.page_content .lesson_list_box .lesson_div .lesson_name h3{
+    width:90px;
+    float:right;
+    font-size:60px;
+    line-height:60px;
+    color:#ededed;
+    font-family:Kla_l_i;
+    text-align:right;
+}
+/*合作伙伴*/
+.partner_box{
+    width:1280px;
+    float:left;
+    box-sizing:border-box;
+    padding:50px 160px;
+}
+.partner_box .partner_logo_box{
+    width:800px;
+    float:left;
+    padding:0 80px;
+}
+.partner_box .partner_logo_box img{
+    width:220px;
+    float:left;
+    margin-right:70px;
+    margin-bottom:10px;
+}
+.partner_box .partner_logo_box img:nth-child(3n){
+    margin-right:0;
+}
+/*奖品*/
+.gift_box,
+.gotu_info{
+    width:1280px;
+    float:left;
+    position:relative;
+}
+.gift_box img,
+.gotu_info img{
+    width:100%;
+    float:left;
+}
+.gift_box .gift_btn{
+    position:absolute;
+    top:186px;
+    left:185px;
+}
+/*跳转德国会议促进局中文网页*/
+.gotu_info .info_btn{
+    position:absolute;
+    top:86px;
+    right:185px;
+}
+/*页面底部*/
+.copyright_statement,
+.page_bottom{
+    width:100%;
+    float:left;
+    min-width:1280px;
+    background-color:#ababab;
+}
+.copyright_statement{
+    background-color:#ededed;
+    font-size:13px;
+    line-height:40px;
+    text-align:center;
+}
+.page_bottom .bottom_box{
+    width:1280px;
+    height:70px;
+    margin:40px auto 0 auto;
+    padding:0 160px;
+    box-sizing:border-box;
+    position:relative;
+}
+.page_bottom .bottom_box .bottom_logo{
+    height:34px;
+    position:absolute;
+    top:18px;
+    left:160px;
+}
+.page_bottom .bottom_box .bottom_center{
+    width:400px;
+    float:left;
+    margin-top:20px;
+    margin-left:280px;
+}
+.page_bottom .bottom_box .bottom_center .wechat,
+.page_bottom .bottom_box .bottom_center .bottom_icon{
+    height:30px;
+    float:left;
+    margin-right:8px;
+}
+.page_bottom .bottom_box .bottom_center .wechat img{
+    height:100%;
+    float:left
+}
+.page_bottom .bottom_box .bottom_center .wechat .wechat_code{
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:-164px;
+    left:380px;
+    border:5px solid #777;
+    display:none;
+}
+.page_bottom .bottom_box .bottom_center .wechat:hover .wechat_code{
+    display:block;
+}
+.page_bottom .bottom_box .bottom_center ul{
+    float:right;
+    margin:7px 0 7px 20px;
+}
+.page_bottom .bottom_box .bottom_center ul li{
+    float:left;
+    font-size:14px;
+    line-height:16px;
+    color:#231815;
+    border-left:1px solid #231815;
+    padding:0 10px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.page_bottom .bottom_box .bottom_center ul li:first-child{
+    border:0;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+.black_btn {
+    padding:0 16px;
+    font-size:16px;
+    color:#fff;
+    line-height:42px;
+    border-radius:3px;
+    background-color:#000;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
