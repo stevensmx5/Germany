@@ -60,7 +60,7 @@ html,div,img{
         url('../font/Klavika Regular.ttf') format('truetype');
 	font-style: normal;
 }
-/*首页-顶部*/
+/*顶部*/
 .page_top{
     width:100%;
     float:left;
@@ -223,7 +223,7 @@ html,div,img{
     font-family:Kla_l_i;
     text-align:right;
 }
-/*合作伙伴*/
+/*首页-合作伙伴*/
 .partner_box{
     width:1280px;
     float:left;
@@ -244,7 +244,7 @@ html,div,img{
 .partner_box .partner_logo_box img:nth-child(3n){
     margin-right:0;
 }
-/*奖品*/
+/*首页-奖品*/
 .gift_box,
 .gotu_info{
     width:1280px;
@@ -261,12 +261,146 @@ html,div,img{
     top:186px;
     left:185px;
 }
-/*跳转德国会议促进局中文网页*/
+/*首页-跳转德国会议促进局中文网页*/
 .gotu_info .info_btn{
     position:absolute;
     top:86px;
     right:185px;
 }
+
+/*登录-红色横条*/
+.login_top{
+    width:100%;
+    float:left;
+    min-width:1280px;
+    background-color:#f50002;
+}
+.login_top .login_top_div{
+    width:1280px;
+    margin:0 auto;
+    padding:20px 160px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.login_top .login_top_div .login_top_left{
+    float:left;
+}
+.login_top .login_top_div .login_top_left img{
+    height:24px;
+    float:left;
+}
+.login_top .login_top_div .login_top_left p{
+    float:left;
+    font-size:20px;
+    line-height:24px;
+    color:#fff;
+    margin-left:10px;
+}
+.login_top .login_top_div .login_top_right{
+    float:right;
+}
+.login_top .login_top_div .login_top_right p,
+.login_top .login_top_div .login_top_right span{
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    margin-top:8px;
+    color:#fff;
+}
+.login_top .login_top_div .login_top_right p{
+    cursor:pointer;
+}
+.login_top .login_top_div .login_top_right span{
+    margin:7px 5px 0 5px;
+}
+/*登录-登录框*/
+.login_box{
+    width:1280px;
+    height:500px;
+    margin:0 auto;
+    box-sizing:border-box;
+    background:url(../images/login_bg.jpg) no-repeat top left;
+    background-size:100% 100%;
+}
+.login_box .login_div{
+    width:450px;
+    float:left;
+    padding:20px 80px;
+    background-color:#fff;
+    border-radius:8px;
+    margin-left:415px;
+    margin-top:100px;
+    box-sizing:border-box;
+}
+.login_box .login_div h2{
+    width:100%;
+    float:left;
+    margin-top:20px;
+    font-size:13px;
+    line-height:25px;
+    color:#595656;
+}
+.login_box .login_div input{
+    width:100%;
+    float:left;
+    font-size:13px;
+    color:#231815;
+    line-height:23px;
+    padding:5px 10px;
+    border:1px solid #d5d5d5;
+    border-radius:3px;
+    box-sizing:border-box;
+}
+.login_box .login_div p{
+    float:left;
+    font-size:11px;
+    color:#595656;
+    line-height:15px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    margin-bottom:30px;
+    margin-top:5px;
+}
+.login_box .login_div p:hover{
+    color:#f50002;
+}
+.login_box .login_div .login_btn{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    text-align:center;
+    font-size:14px;
+    line-height:32px;
+    color:#fff;
+    background-color:#312927;
+    border-radius:3px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    margin-bottom:20px;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
 /*页面底部*/
 .copyright_statement,
 .page_bottom{
@@ -342,27 +476,6 @@ html,div,img{
 .page_bottom .bottom_box .bottom_center ul li:first-child{
     border:0;
 }
-
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
 .black_btn {
     padding:0 16px;
     font-size:16px;
