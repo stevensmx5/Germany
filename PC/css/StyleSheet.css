@@ -308,7 +308,7 @@ html,div,img{
     color:#fff;
 }
 .login_top .login_top_div .login_top_right p{
-    cursor:pointer;
+    cursor:initial;
 }
 .login_top .login_top_div .login_top_right span{
     margin:7px 5px 0 5px;
@@ -382,10 +382,243 @@ html,div,img{
     -webkit-user-select:none;
     margin-bottom:20px;
 }
-/**/
-/**/
-/**/
-/**/
+/*×¢²á-Ò³Ãæ1*/
+.register_box{
+    width:1280px;
+    margin:0 auto;
+    padding:45px 160px;
+    box-sizing:border-box;
+    background-color:#ededed;
+    overflow:hidden;
+    border-bottom:1px solid #dedddd;
+}
+.register_box .register_body{
+    width:100%;
+    float:left;
+    padding:30px 0 50px 0;
+    background-color:#fff;
+    box-sizing:border-box;
+}
+.register_box .register_body .register_step{
+    float:left;
+    margin-left:150px;
+}
+.register_box .register_body .register_step p{
+    width:130px;
+    float:left;
+    color:#ededed;
+    font-family:Kla_r;
+    font-size:24px;
+    line-height:60px;
+    text-align:center;
+    margin:0 45px;
+}
+.register_box .register_body .register_step p.open{
+    color:#231815;
+    border-bottom:1px solid #c8c5c4;
+}
+.register_box .register_body h2{
+    width:100%;
+    float:left;
+    font-size:18px;
+    line-height:20px;
+    color:#595656;
+    text-align:center;
+    margin:40px 0 20px 0;
+}
+.register_box .register_body h2 span{
+    font-size:18px;
+    line-height:20px;
+    color:#f50002;
+}
+.register_box .aggreement_box{
+    width:100%;
+    height:500px;
+    float:left;
+    box-sizing:border-box;
+    padding:0 60px;
+}
+.register_box .aggreement_box iframe{
+    width:100%;
+    height:100%;
+}
+.register_box .register_btn_row{
+    width:100%;
+    float:left;
+    margin-top:40px;
+    box-sizing:border-box;
+    padding:0 60px;
+}
+.register_btn_row .confirm_btn,
+.register_btn_row .cancel_btn{
+    width:60px;
+    height:30px;
+    float:right;
+    font-size:12px;
+    line-height:30px;
+    margin-left:20px;
+    border-radius:3px;
+    text-align:center;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.register_btn_row .confirm_btn{
+    background-color:#312927;
+    color:#fff;
+}
+.register_btn_row .cancel_btn{
+    background-color:#f2f2f2;
+    color:#7F7D7D;
+}
+/*Ð­ÒéÒ³Ãæ*/
+.agreement_box{
+    width:100%;
+    float:left;
+}
+.agreement_box p{
+    width:100%;
+    float:left;
+    font-size:13px;
+    line-height:21px;
+    color:#838080;
+    box-sizing:border-box;
+    padding-right:40px;
+}
+/*×¢²á-Ò³Ãæ2*/
+.register_form{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0 60px;
+}
+.register_form .input_box{
+    width:390px;
+    float:left;
+    position:relative;
+    margin-bottom:15px;
+}
+.register_form .input_box:nth-child(2n+1){
+    margin-right:30px;
+}
+.register_form .input_box:nth-child(2n){
+    margin-left:30px;
+}
+.register_form .input_box p{
+    float:left;
+    font-size:13px;
+    line-height:23px;
+    color:#636161;
+    margin-right:5px;
+}
+.register_form .input_box p span{
+    font-size:13px;
+    line-height:23px;
+    color:#f50002;
+}
+.register_form input {
+    width:100%;
+    float:left;
+    font-size:13px;
+    line-height:19px;
+    color:#595656;
+    box-sizing:border-box;
+    padding:5px 10px;
+    border:1px solid #d5d5d5;
+    border-radius:4px;
+    margin-top:5px;
+}
+.register_form .pas_lev{
+    width:100%;
+    float:left;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+}
+.register_form .pas_lev li{
+    width:50px;
+    height:4px;
+    float:left;
+    margin-right:5px;
+    display:none;
+}
+.register_form .pas_lev li.lev_1{
+    background-color:#fdd9d9;
+}
+.register_form .pas_lev li.lev_2{
+    background-color:#fba6a7;
+}
+.register_form .pas_lev li.lev_3{
+    background-color:#f97374;
+}
+.register_form .pas_lev li.lev_4{
+    background-color:#f84041;
+}
+.register_form .pas_lev li.lev_5{
+    background-color:#f50002;
+}
+.register_form .input_box .sex_box{
+    width:60px;
+    float:left;
+    margin-right:30px;
+}
+.register_form .input_box .yzm_box{
+    width:160px;
+    float:left;
+    margin-right:15px;
+}
+.register_form .input_box .yzm_img{
+    width:125px;
+    height:31px;
+    float:left;
+    margin-top:28px;
+    overflow:hidden;
+    border-radius:3px;
+}
+.register_form .input_box .yzm_img img{
+    width:100%;
+    height:100%;
+    float:left;
+}
+.register_form .input_box .pwd_check{
+    width:13px;
+    float:left;
+    margin-top:5px;
+}
+.register_form .input_box .sec_box{
+    width:180px;
+    float:left;
+    margin-left:30px;
+}
+.register_form .input_box .sec_box:first-child{
+    margin:0;
+}
+/*×¢²á-Ò³Ãæ3*/
+.register_img{
+    width:100%;
+    float:left;
+}
+.success_btn_box{
+    float:left;
+    margin-left:332px;
+}
+.success_btn_box .suc_btn{
+    float:right;
+    font-size:12px;
+    line-height:30px;
+    margin-left:20px;
+    border-radius:3px;
+    text-align:center;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    background-color:#312927;
+    color:#fff;
+    padding:0 10px;
+    margin:0 10px;
+}
 /**/
 /**/
 /**/
