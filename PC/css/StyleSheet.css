@@ -11,6 +11,10 @@ html,div,img{
 .m_b_20{
     margin-bottom:20px;
 }
+.row{
+    width:100%;
+    float:left;
+}
 
 @font-face {
 	font-family: 'Kla_b_i';
@@ -263,10 +267,16 @@ html,div,img{
     float:left;
     position:relative;
 }
-.gift_box img,
+.gift_box .gift_bg,
 .gotu_info img{
     width:100%;
     float:left;
+}
+.gift_box .gift_img{
+    width:970px;
+    position:absolute;
+    top:183px;
+    left:183px;
 }
 .gift_box .gift_btn{
     position:absolute;
@@ -347,20 +357,35 @@ html,div,img{
     margin-top:100px;
     box-sizing:border-box;
 }
-.login_box .login_div h2{
+.login_box .login_div h1{
     width:100%;
     float:left;
-    margin-top:20px;
+    font-size:18px;
+    line-height:24px;
+    color:#595656;
+    margin:10px 0;
+}
+.login_box .login_div h2,
+.login_box .login_div span{
+    float:left;
+    margin-top:15px;
     font-size:13px;
     line-height:25px;
     color:#595656;
+}
+.login_box .login_div span:hover{
+    text-decoration:underline;
+}
+.login_box .login_div a{
+    float:left;
+    margin-left:10px;
 }
 .login_box .login_div input{
     width:100%;
     float:left;
     font-size:13px;
     color:#231815;
-    line-height:23px;
+    line-height:19px;
     padding:5px 10px;
     border:1px solid #d5d5d5;
     border-radius:3px;
@@ -380,6 +405,11 @@ html,div,img{
 }
 .login_box .login_div p:hover{
     color:#f50002;
+}
+.login_box .login_div .input_box{
+    width:100%;
+    float:left;
+    position:relative;
 }
 .login_box .login_div .login_btn{
     width:100%;
@@ -493,6 +523,9 @@ html,div,img{
     background-color:#f2f2f2;
     color:#7F7D7D;
 }
+.register_btn_row .cancel_btn:hover{
+    background-color:#fafafa;
+}
 /*协议页面*/
 .agreement_box{
     width:100%;
@@ -550,33 +583,40 @@ html,div,img{
     border-radius:4px;
     margin-top:5px;
 }
-.register_form .pas_lev{
+.register_form .pas_lev,
+.login_box .login_div .input_box .pas_lev{
     width:100%;
     float:left;
     position:absolute;
     left:0;
     bottom:-10px;
 }
-.register_form .pas_lev li{
+.register_form .pas_lev li,
+.login_box .login_div .input_box .pas_lev li{
     width:50px;
     height:4px;
     float:left;
     margin-right:5px;
     display:none;
 }
-.register_form .pas_lev li.lev_1{
+.register_form .pas_lev li.lev_1,
+.login_box .login_div .input_box .pas_lev li.lev_1{
     background-color:#fdd9d9;
 }
-.register_form .pas_lev li.lev_2{
+.register_form .pas_lev li.lev_2,
+.login_box .login_div .input_box .pas_lev li.lev_2{
     background-color:#fba6a7;
 }
-.register_form .pas_lev li.lev_3{
+.register_form .pas_lev li.lev_3,
+.login_box .login_div .input_box .pas_lev li.lev_3{
     background-color:#f97374;
 }
-.register_form .pas_lev li.lev_4{
+.register_form .pas_lev li.lev_4,
+.login_box .login_div .input_box .pas_lev li.lev_4{
     background-color:#f84041;
 }
-.register_form .pas_lev li.lev_5{
+.register_form .pas_lev li.lev_5,
+.login_box .login_div .input_box .pas_lev li.lev_5{
     background-color:#f50002;
 }
 .register_form .input_box .sex_box{
@@ -643,9 +683,62 @@ html,div,img{
 .success_btn_box .suc_btn:hover{
     background-color:#777;
 }
-/**/
-/**/
-/**/
+/*找回密码页面*/
+.findpwd_box{
+    margin-top:25px !important;
+}
+.findpwd_box .yzm_box{
+    width:100%;
+    float:left;
+}
+.findpwd_box .yzm_box input{
+    width:55%;
+}
+.findpwd_box .yzm_box img{
+    width:35%;
+    height:31px;
+    float:right;
+    border-radius:3px;
+}
+.findpwd_box .login_btn{
+    margin-top:30px;
+}
+/*修改头像页面*/
+.user_photo{
+    width:130px;
+    height:130px;
+    background-color:#999;
+    float:left;
+    border-radius:3px;
+    overflow:hidden;
+    margin:10px 80px 30px 80px;
+}
+.user_photo img{
+    width:100%;
+    height:100%;
+    float:left;
+}
+/*用户中心页面*/
+.ucenter_top{
+    width:100%;
+    float:left;
+    min-width:1280px;
+    background-color:#f50002;
+}
+.ucenter_top .ucenter_top_div{
+    width:1280px;
+    margin:0 auto;
+    padding:0 160px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.ucenter_top .ucenter_top_div p{
+    font-size:14px;
+    line-height:30px;
+    color:#fff;
+    float:right;
+    margin-left:10px;
+}
 /**/
 /**/
 /**/
@@ -710,8 +803,16 @@ html,div,img{
 .alert_body .alert_box .alert_content p{
     width:75%;
     float:left;
-    font-size:12px;
-    line-height:17px;
+    font-size:14px;
+    line-height:18px;
+    color:#fff;
+    margin-top:6px;
+}
+.alert_body .alert_box .alert_content a{
+    width:75%;
+    float:left;
+    font-size:14px;
+    line-height:18px;
     color:#fff;
     margin-top:6px;
 }
