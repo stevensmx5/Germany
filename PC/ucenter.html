@@ -6,9 +6,10 @@
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="css/StyleSheet.css" />
     <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            
+            $('#title_percent').circliful();
         });
     </script>
 </head>
@@ -16,7 +17,7 @@
     <!--页面顶部-->
     <div class="page_top">
         <div class="top_box">
-            <img alt="" class="top_logo" src="images/top_logo.png" />
+            <a href=""><img alt="" class="top_logo" src="images/top_logo.png" /></a>
             <img alt="" class="top_logo" src="images/top_text.png" />
         </div>
     </div>
@@ -34,7 +35,20 @@
 
     
     <div class="page_content_box">
-        
+        <div class="ucenter_title_box">
+            <div class="ucenter_title">
+                <h2>个人中心</h2>
+                <img class="user_portrait" alt="" src="images/user_img.png" />
+                <h2>欢迎你：刘浩</h2>
+                <div class="complete_percent">
+                    <p>专家培训已完成</p>
+                    <!--data-text是文本显示的数字；data-percent是控制百分比进度条位置-->
+                    <div id="title_percent" data-dimension="50" data-text="31%" data-width="8" data-fontsize="14" data-percent="31" data-fgcolor="#80ba27" data-bgcolor="#fff"></div> 
+                </div>
+
+                <div class="logout_btn">退出</div>
+            </div>
+        </div>
     </div>
 
     <!--页面底部-->

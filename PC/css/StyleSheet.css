@@ -85,7 +85,6 @@ html,div,img{
     padding:30px 160px;
 }
 .page_top .top_box .top_logo{
-    height:60px;
     float:left;
     padding:0 20px;
     border-left:1px solid #c8c5c4;
@@ -96,7 +95,7 @@ html,div,img{
 }
 .page_top .top_box .top_right{
     float:right;
-    padding-top:30px;
+    padding-top:34px;
 }
 .page_top .top_box .top_right .w_btn{
     float:right;
@@ -308,8 +307,9 @@ html,div,img{
     float:left;
 }
 .login_top .login_top_div .login_top_left img{
-    height:24px;
+    height:22px;
     float:left;
+    margin-top:2px;
 }
 .login_top .login_top_div .login_top_left p{
     float:left;
@@ -366,14 +366,14 @@ html,div,img{
     margin:10px 0;
 }
 .login_box .login_div h2,
-.login_box .login_div span{
+.login_box .login_div h3{
     float:left;
     margin-top:15px;
     font-size:13px;
     line-height:25px;
     color:#595656;
 }
-.login_box .login_div span:hover{
+.login_box .login_div h3:hover{
     text-decoration:underline;
 }
 .login_box .login_div a{
@@ -566,7 +566,8 @@ html,div,img{
     color:#636161;
     margin-right:5px;
 }
-.register_form .input_box p span{
+.register_form .input_box p span,
+.login_box .login_div h2 span{
     font-size:13px;
     line-height:23px;
     color:#f50002;
@@ -642,10 +643,15 @@ html,div,img{
     height:100%;
     float:left;
 }
-.register_form .input_box .pwd_check{
-    width:13px;
+.register_form .input_box .pwd_check,
+.login_box .login_div .pwd_check{
+    width:12px;
     float:left;
-    margin-top:5px;
+    margin-top:6px;
+}
+.login_box .login_div .pwd_check{
+    margin-top:22px;
+    margin-left:8px;
 }
 .register_form .input_box .sec_box{
     width:180px;
@@ -738,6 +744,64 @@ html,div,img{
     color:#fff;
     float:right;
     margin-left:10px;
+}
+.ucenter_title_box{
+    width:1280px;
+    margin:0 auto;
+    padding:0 160px;
+    box-sizing:border-box;
+    background-color:#ededed;
+    overflow:hidden;
+}
+.ucenter_title_box .ucenter_title{
+    width:100%;
+    float:left;
+}
+.ucenter_title_box .ucenter_title h2{
+    float:left;
+    font-size:19px;
+    line-height:75px;
+    color:#231815;
+}
+.ucenter_title_box .ucenter_title .user_portrait{
+    width:75px;
+    height:75px;
+    float:left;
+    margin:0 20px;
+}
+.ucenter_title_box .ucenter_title .complete_percent{
+    float:left;
+}
+.ucenter_title_box .ucenter_title .complete_percent p{
+    float:left;
+    font-size:14px;
+    line-height:70px;
+    color:#231815;
+    margin:4px 10px 0 80px;
+}
+.ucenter_title_box .ucenter_title .complete_percent #title_percent{
+    float:left;
+    margin-top:14px;
+}
+.ucenter_title_box .ucenter_title .complete_percent .circle-text{
+    margin-left:50px;
+    color:#80ba27;
+}
+.ucenter_title_box .ucenter_title .logout_btn{
+    float:right;
+    font-size:14px;
+    line-height:30px;
+    color:#231815;
+    background-color:#fff;
+    border-radius:4px;
+    padding:0 20px;
+    margin-top:22px;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.ucenter_title_box .ucenter_title .logout_btn:hover{
+    background-color:#f7f7f7;
 }
 /**/
 /**/
@@ -864,9 +928,9 @@ html,div,img{
     position:relative;
 }
 .page_bottom .bottom_box .bottom_logo{
-    height:34px;
+    height:32px;
     position:absolute;
-    top:18px;
+    top:19px;
     left:160px;
 }
 .page_bottom .bottom_box .bottom_center{
@@ -877,7 +941,7 @@ html,div,img{
 }
 .page_bottom .bottom_box .bottom_center .wechat,
 .page_bottom .bottom_box .bottom_center .bottom_icon{
-    height:30px;
+    height:29px;
     float:left;
     margin-right:8px;
 }
@@ -936,4 +1000,25 @@ html,div,img{
 }
 .dis{
     display:none;
+}
+/*圆形百分比*/
+.circliful {
+    position: relative;
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle-info, .circle-info-half {
+    color: #999;
+}
+
+.circliful .fa {
+    margin: -10px 3px 0 3px;
+    position: relative;
+    bottom: 4px;
 }
