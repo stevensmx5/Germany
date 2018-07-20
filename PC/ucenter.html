@@ -10,6 +10,8 @@
     <script type="text/javascript">
         $(function () {
             $('#title_percent').circliful();
+            $('#lesson_percent_1').circliful();
+            $('#lesson_percent_3').circliful();
         });
     </script>
 </head>
@@ -46,9 +48,83 @@
                     <div id="title_percent" data-dimension="50" data-text="31%" data-width="8" data-fontsize="14" data-percent="31" data-fgcolor="#80ba27" data-bgcolor="#fff"></div> 
                 </div>
 
-                <div class="logout_btn">退出</div>
+                <div class="right_btn">
+                    <img alt="" src="images/option.png" />
+                    <p>修改个人资料</p>
+                </div>
+                <div class="right_btn">
+                    <img alt="" src="images/key_b.png" />
+                    <p>修改密码</p>
+                </div>
             </div>
         </div>
+        <div class="ucenter_top_img">
+            <img alt="" src="images/ucenter_top_img.jpg" />
+        </div>
+
+        <div class="page_content">
+            <div class="ucenter_lesson_box">
+                <h2>你的专家课程</h2>
+                <div class="lesson_div">
+                    <img alt="" src="images/ucenter_lesson_1.jpg" />
+                    <div class="lesson_progess">
+                        <h3>.01</h3>
+                        <div class="progess_div">
+                            <h4>会奖旅游目的地——德国</h4>
+                            <div class="percent_box">
+                                <p>已学习</p>
+                                <div class="pro_div" id="lesson_percent_1" data-dimension="70" data-text="45%" data-width="5" data-fontsize="17" data-percent="45" data-fgcolor="#80ba27" data-bgcolor="#ededed"></div>
+                                <div class="lesson_btn study">继续学习</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson_div">
+                    <img alt="" src="images/ucenter_lesson_2.jpg" />
+                    <div class="lesson_progess">
+                        <h3>.02</h3>
+                        <div class="progess_div">
+                            <h4>会奖之都——柏林</h4>
+                            <div class="percent_box">
+                                <div class="lesson_btn begin">开始学习</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson_div">
+                    <img alt="" src="images/ucenter_lesson_3.jpg" />
+                    <div class="lesson_progess">
+                        <h3>.03</h3>
+                        <div class="progess_div">
+                            <h4>德国会奖精选</h4>
+                            <div class="percent_box">
+                                <p>已学习</p>
+                                <div class="pro_div" id="lesson_percent_3" data-dimension="70" data-text="14%" data-width="5" data-fontsize="17" data-percent="14" data-fgcolor="#80ba27" data-bgcolor="#ededed"></div>
+                                <div class="lesson_btn begin">继续学习</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson_div">
+                    <img alt="" src="images/ucenter_lesson_4.jpg" />
+                    <div class="lesson_progess">
+                        <h3>.04</h3>
+                        <div class="progess_div">
+                            <h4>会奖之都——柏林</h4>
+                            <div class="percent_box">
+                                <div class="lesson_btn over">已完成</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gift_box">
+                <img class="gift_bg" alt="" src="images/gitf_bg.jpg" />
+                <a href=""><img class="gift_img" alt="" src="images/gift.png" /></a>
+                <a><div class="black_btn gift_btn">立刻登录课堂</div></a>
+            </div>
+        </div>
+        
     </div>
 
     <!--页面底部-->

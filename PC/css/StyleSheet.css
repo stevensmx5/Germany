@@ -177,7 +177,8 @@ html,div,img{
     box-sizing:border-box;
     margin:0 auto;
 }
-.page_content .lesson_list_box{
+.page_content .lesson_list_box,
+.ucenter_lesson_box{
     width:1280px;
     float:left;
     box-sizing:border-box;
@@ -186,7 +187,8 @@ html,div,img{
     padding:50px 160px 50px 160px;
 }
 .page_content .lesson_list_box h2,
-.partner_box h2{
+.partner_box h2,
+.ucenter_lesson_box h2{
     width:100%;
     float:left;
     font-size:18px;
@@ -200,13 +202,16 @@ html,div,img{
     cursor:pointer;
     margin-bottom:40px;
 }
-.page_content .lesson_list_box .lesson_div:nth-child(2n){
+.page_content .lesson_list_box .lesson_div:nth-child(2n),
+.ucenter_lesson_box .lesson_div:nth-child(2n){
     margin-right:30px;
 }
-.page_content .lesson_list_box .lesson_div:nth-child(2n+1){
+.page_content .lesson_list_box .lesson_div:nth-child(2n+1),
+.ucenter_lesson_box .lesson_div:nth-child(2n+1){
     margin-left:30px;
 }
-.page_content .lesson_list_box .lesson_div img{
+.page_content .lesson_list_box .lesson_div img,
+.ucenter_lesson_box .lesson_div img{
     width:100%;
     float:left;
 }
@@ -313,7 +318,7 @@ html,div,img{
 }
 .login_top .login_top_div .login_top_left p{
     float:left;
-    font-size:20px;
+    font-size:18px;
     line-height:24px;
     color:#fff;
     margin-left:10px;
@@ -347,7 +352,8 @@ html,div,img{
     background:url(../images/login_bg.jpg) no-repeat top left;
     background-size:100% 100%;
 }
-.login_box .login_div{
+.login_box .login_div,
+.findpwd_box .login_div{
     width:450px;
     float:left;
     padding:20px 80px;
@@ -357,7 +363,8 @@ html,div,img{
     margin-top:100px;
     box-sizing:border-box;
 }
-.login_box .login_div h1{
+.login_box .login_div h1,
+.findpwd_box .login_div h1{
     width:100%;
     float:left;
     font-size:18px;
@@ -366,21 +373,26 @@ html,div,img{
     margin:10px 0;
 }
 .login_box .login_div h2,
-.login_box .login_div h3{
+.login_box .login_div h3,
+.findpwd_box .login_div h2,
+.findpwd_box .login_div h3{
     float:left;
     margin-top:15px;
     font-size:13px;
     line-height:25px;
     color:#595656;
 }
-.login_box .login_div h3:hover{
+.login_box .login_div h3:hover,
+.findpwd_box .login_div h3:hover{
     text-decoration:underline;
 }
-.login_box .login_div a{
+.login_box .login_div a,
+.findpwd_box .login_div a{
     float:left;
     margin-left:10px;
 }
-.login_box .login_div input{
+.login_box .login_div input,
+.findpwd_box .login_div input{
     width:100%;
     float:left;
     font-size:13px;
@@ -391,7 +403,8 @@ html,div,img{
     border-radius:3px;
     box-sizing:border-box;
 }
-.login_box .login_div p{
+.login_box .login_div p,
+.findpwd_box .login_div p{
     float:left;
     font-size:11px;
     color:#595656;
@@ -403,15 +416,18 @@ html,div,img{
     margin-bottom:30px;
     margin-top:5px;
 }
-.login_box .login_div p:hover{
+.login_box .login_div p:hover,
+.findpwd_box .login_div p:hover{
     color:#f50002;
 }
-.login_box .login_div .input_box{
+.login_box .login_div .input_box,
+.findpwd_box .login_div .input_box{
     width:100%;
     float:left;
     position:relative;
 }
-.login_box .login_div .login_btn{
+.login_box .login_div .login_btn,
+.findpwd_box .login_div .login_btn{
     width:100%;
     float:left;
     box-sizing:border-box;
@@ -427,7 +443,8 @@ html,div,img{
     -webkit-user-select:none;
     margin-bottom:20px;
 }
-.login_box .login_div .login_btn:hover{
+.login_box .login_div .login_btn:hover,
+.findpwd_box .login_div .login_btn:hover{
     background-color:#777;
 }
 /*◊¢≤·-“≥√Ê1*/
@@ -567,7 +584,8 @@ html,div,img{
     margin-right:5px;
 }
 .register_form .input_box p span,
-.login_box .login_div h2 span{
+.login_box .login_div h2 span,
+.findpwd_box .login_div h2 span{
     font-size:13px;
     line-height:23px;
     color:#f50002;
@@ -585,7 +603,8 @@ html,div,img{
     margin-top:5px;
 }
 .register_form .pas_lev,
-.login_box .login_div .input_box .pas_lev{
+.login_box .login_div .input_box .pas_lev,
+.findpwd_box .login_div .input_box .pas_lev{
     width:100%;
     float:left;
     position:absolute;
@@ -593,7 +612,8 @@ html,div,img{
     bottom:-10px;
 }
 .register_form .pas_lev li,
-.login_box .login_div .input_box .pas_lev li{
+.login_box .login_div .input_box .pas_lev li,
+.findpwd_box .login_div .input_box .pas_lev li{
     width:50px;
     height:4px;
     float:left;
@@ -601,23 +621,28 @@ html,div,img{
     display:none;
 }
 .register_form .pas_lev li.lev_1,
-.login_box .login_div .input_box .pas_lev li.lev_1{
+.login_box .login_div .input_box .pas_lev li.lev_1,
+.findpwd_box .login_div .input_box .pas_lev li.lev_1{
     background-color:#fdd9d9;
 }
 .register_form .pas_lev li.lev_2,
-.login_box .login_div .input_box .pas_lev li.lev_2{
+.login_box .login_div .input_box .pas_lev li.lev_2,
+.findpwd_box .login_div .input_box .pas_lev li.lev_2{
     background-color:#fba6a7;
 }
 .register_form .pas_lev li.lev_3,
-.login_box .login_div .input_box .pas_lev li.lev_3{
+.login_box .login_div .input_box .pas_lev li.lev_3,
+.findpwd_box .login_div .input_box .pas_lev li.lev_3{
     background-color:#f97374;
 }
 .register_form .pas_lev li.lev_4,
-.login_box .login_div .input_box .pas_lev li.lev_4{
+.login_box .login_div .input_box .pas_lev li.lev_4,
+.findpwd_box .login_div .input_box .pas_lev li.lev_4{
     background-color:#f84041;
 }
 .register_form .pas_lev li.lev_5,
-.login_box .login_div .input_box .pas_lev li.lev_5{
+.login_box .login_div .input_box .pas_lev li.lev_5,
+.findpwd_box .login_div .input_box .pas_lev li.lev_5{
     background-color:#f50002;
 }
 .register_form .input_box .sex_box{
@@ -644,12 +669,14 @@ html,div,img{
     float:left;
 }
 .register_form .input_box .pwd_check,
-.login_box .login_div .pwd_check{
+.login_box .login_div .pwd_check,
+.findpwd_box .login_div .pwd_check{
     width:12px;
     float:left;
     margin-top:6px;
 }
-.login_box .login_div .pwd_check{
+.login_box .login_div .pwd_check,
+.findpwd_box .login_div .pwd_check{
     margin-top:22px;
     margin-left:8px;
 }
@@ -691,33 +718,42 @@ html,div,img{
 }
 /*’“ªÿ√‹¬Î“≥√Ê*/
 .findpwd_box{
-    margin-top:25px !important;
+    width:1280px;
+    height:655px;
+    margin:0 auto;
+    box-sizing:border-box;
+    background:url(../images/findpassword_bg.jpg) no-repeat top left;
+    background-size:100% 100%;
 }
-.findpwd_box .yzm_box{
+.findpwd_div .yzm_box{
     width:100%;
     float:left;
 }
-.findpwd_box .yzm_box input{
+.findpwd_div .yzm_box input{
     width:55%;
 }
-.findpwd_box .yzm_box img{
+.findpwd_div .yzm_box img{
     width:35%;
     height:31px;
     float:right;
     border-radius:3px;
 }
-.findpwd_box .login_btn{
+.findpwd_div .login_btn{
     margin-top:30px;
 }
 /*–ﬁ∏ƒÕ∑œÒ“≥√Ê*/
+.modift_photo_box{
+    margin-top:70px !important;
+    padding-bottom:30px !important;
+}
 .user_photo{
-    width:130px;
-    height:130px;
+    width:120px;
+    height:120px;
     background-color:#999;
     float:left;
     border-radius:3px;
     overflow:hidden;
-    margin:10px 80px 30px 80px;
+    margin:40px 85px 40px 85px;
 }
 .user_photo img{
     width:100%;
@@ -787,6 +823,22 @@ html,div,img{
     margin-left:50px;
     color:#80ba27;
 }
+.ucenter_title_box .ucenter_title .right_btn{
+    float:right;
+    margin-right:30px;
+    margin-top:23px;
+}
+.ucenter_title_box .ucenter_title .right_btn img{
+    float:left;
+    height:29px;
+    margin-right:6px;
+}
+.ucenter_title_box .ucenter_title .right_btn p{
+    font-size:15px;
+    line-height:29px;
+    float:left;
+    color:#231815;
+}
 .ucenter_title_box .ucenter_title .logout_btn{
     float:right;
     font-size:14px;
@@ -802,6 +854,105 @@ html,div,img{
 }
 .ucenter_title_box .ucenter_title .logout_btn:hover{
     background-color:#f7f7f7;
+}
+.ucenter_top_img{
+    width:1280px;
+    margin:0 auto;
+}
+.ucenter_lesson_box .lesson_div{
+    width:450px;
+    float:left;
+    margin-bottom:40px;
+}
+.ucenter_top_img img{
+    width:100%;
+    float:left;
+}
+.ucenter_lesson_box .lesson_div .lesson_progess{
+    width:100%;
+    float:left;
+    background-color:#fff;
+    border-top:3px solid #f50002;
+    box-sizing:border-box;
+    padding:10px 0;
+}
+.ucenter_lesson_box .lesson_div .lesson_progess h3{
+    width:90px;
+    float:left;
+    font-size:60px;
+    line-height:60px;
+    color:#ededed;
+    font-family:Kla_l_i;
+    margin-top:-10px;
+    padding-left:3px;
+    box-sizing:border-box;
+}
+.lesson_progess .progess_div{
+    width:360px;
+    float:left;
+    box-sizing:border-box;
+    padding:0 30px;
+    border-left:1px solid #f6f6f6;
+}
+.lesson_progess .progess_div h4{
+    width:100%;
+    min-height:54px;
+    float:left;
+    font-size:17px;
+    line-height:27px;
+    color:#231815;
+}
+.lesson_progess .progess_div .percent_box{
+    width:100%;
+    height:70px;
+    float:left;
+}
+.lesson_progess .progess_div .percent_box p{
+    float:left;
+    font-size:17px;
+    line-height:70px;
+    color:#231815;
+}
+.lesson_progess .progess_div .percent_box .pro_div{
+    float:left;
+    margin-left:30px;
+}
+.lesson_progess .progess_div .percent_box .pro_div .circle-text{
+    color:#80ba27;
+}
+.lesson_progess .progess_div .lesson_btn{
+    width:100px;
+    float:right;
+    font-size:17px;
+    line-height:38px;
+    text-align:center;
+    border-radius:4px;
+    margin-top:16px;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.lesson_progess .progess_div .lesson_btn.study{
+    background-color:#80ba27;
+    color:#fff;
+    cursor:pointer;
+}
+.lesson_progess .progess_div .lesson_btn.study:hover{
+    background-color:#94d530;
+    color:#fff;
+}
+.lesson_progess .progess_div .lesson_btn.begin{
+    background-color:#595656;
+    color:#fff;
+    cursor:pointer;
+}
+.lesson_progess .progess_div .lesson_btn.begin:hover{
+    background-color:#777;
+    color:#fff;
+}
+.lesson_progess .progess_div .lesson_btn.over{
+    background-color:#f50002;
+    color:#fff;
 }
 /**/
 /**/
