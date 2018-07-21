@@ -799,6 +799,14 @@ html,div,img{
     line-height:75px;
     color:#231815;
 }
+.ucenter_title_box .ucenter_title h2 span{
+    font-size:19px;
+    line-height:75px;
+    color:#231815;
+}
+.ucenter_title_box .ucenter_title h2 span:hover{
+    text-decoration:underline;
+}
 .ucenter_title_box .ucenter_title .user_portrait{
     width:75px;
     height:75px;
@@ -827,6 +835,7 @@ html,div,img{
     float:right;
     margin-right:30px;
     margin-top:23px;
+    cursor:pointer;
 }
 .ucenter_title_box .ucenter_title .right_btn img{
     float:left;
@@ -931,32 +940,331 @@ html,div,img{
     user-select:none;
     -moz-user-select:none;
     -webkit-user-select:none;
+    cursor:pointer;
+    color:#fff;
 }
 .lesson_progess .progess_div .lesson_btn.study{
     background-color:#80ba27;
-    color:#fff;
-    cursor:pointer;
 }
 .lesson_progess .progess_div .lesson_btn.study:hover{
     background-color:#94d530;
-    color:#fff;
 }
 .lesson_progess .progess_div .lesson_btn.begin{
     background-color:#595656;
-    color:#fff;
-    cursor:pointer;
 }
 .lesson_progess .progess_div .lesson_btn.begin:hover{
     background-color:#777;
-    color:#fff;
 }
 .lesson_progess .progess_div .lesson_btn.over{
     background-color:#f50002;
-    color:#fff;
 }
-/**/
-/**/
-/**/
+.lesson_progess .progess_div .lesson_btn.over:hover{
+    background-color:#d90002;
+}
+/*课程页面*/
+.chapter_body{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:30px 160px 170px 160px;
+    border-bottom:1px solid #bab8b7;
+    background-color:#ededed;
+}
+.chapter_body .menu_list{
+    width:240px;
+    float:left;
+    box-sizing:border-box;
+    padding-right:50px;
+}
+.chapter_body .menu_list li{
+    width:100%;
+    float:left;
+    position:relative;
+    padding:15px 0;
+}
+.chapter_body .menu_list li h2{
+    font-size:18px;
+    line-height:32px;
+    color:#231815;
+    position:absolute;
+    top:15px;
+    left:0;
+}
+.chapter_body .menu_list li p{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:30px;
+    font-size:18px;
+    line-height:32px;
+    color:#231815;
+}
+.chapter_body .menu_list .active,
+.chapter_body .menu_list .active h2,
+.chapter_body .menu_list .active p{
+    font-weight:bold;
+}
+.chapter_body .menu_list li .sec_menu{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:30px;
+}
+.chapter_body .menu_list li .sec_menu span{
+    width:100%;
+    float:left;
+    font-size:18px;
+    line-height:32px;
+    color:#231815;
+}
+.chapter_body .chapter_content,
+.chapter_body .exam_content{
+    width:720px;
+    float:left;
+    padding:25px;
+    box-sizing:border-box;
+    background-color:#fff;
+}
+.chapter_body .chapter_content h1,
+.chapter_body .exam_content h1{
+    width:100%;
+    float:left;
+    font-size:22px;
+    line-height:24px;
+    color:#231815;
+    font-weight:bold;
+
+}
+.chapter_body .chapter_content .chapter_text{
+    width:100%;
+    float:left;
+    margin-top:40px;
+}
+.chapter_body .chapter_content .chapter_text p{
+    width:100%;
+    float:left;
+    font-size:14px;
+    line-height:24px;
+    color:#231815;
+    margin-bottom:25px;
+}
+.chapter_body .chapter_content .chapter_text img{
+    width:100% !important;
+    margin:5px 0 !important;
+    float:left !important;
+}
+.chapter_body .chapter_content .chapet_btn_row,
+.chapter_body .exam_content .chapet_btn_row{
+    width:100%;
+    float:left;
+}
+.chapter_body .chapter_content .chapet_btn_row .left_btn,
+.chapter_body .chapter_content .chapet_btn_row .right_btn,
+.chapter_body .exam_content .chapet_btn_row .left_btn{
+    font-size:16px;
+    line-height:32px;
+    border-radius:4px;
+    margin-top:30px;
+    padding:0 20px;
+    background-color:#595656;
+    color:#fff;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.chapter_body .chapter_content .chapet_btn_row .left_btn,
+.chapter_body .exam_content .chapet_btn_row .left_btn{
+    float:left;
+}
+.chapter_body .chapter_content .chapet_btn_row .right_btn{
+    float:right;
+    margin-left:20px;
+}
+.chapter_body .chapter_content .chapet_btn_row .left_btn:hover,
+.chapter_body .chapter_content .chapet_btn_row .right_btn:hover,
+.chapter_body .exam_content .chapet_btn_row .left_btn:hover{
+    background-color:#777;
+}
+/*考试页面*/
+.chapter_body .exam_content h1{
+    margin-bottom:40px;
+}
+.chapter_body .exam_content .question_box{
+    width:100%;
+    float:left;
+    margin-bottom:30px;
+}
+.chapter_body .exam_content .question_box h2{
+    max-width:630px;
+    float:left;
+    font-size:14px;
+    line-height:24px;
+    color:#231815;
+}
+.chapter_body .exam_content .question_box .correct,
+.chapter_body .exam_content .question_box .wrong{
+    width:17px;
+    height:17px;
+    float:left;
+    background-size:100% 100%;
+    margin:4px 0 0 15px;
+}
+.chapter_body .exam_content .question_box .correct{
+    background:url(../images/correct.png) no-repeat top left;
+}
+.chapter_body .exam_content .question_box .wrong{
+    background:url(../images/wrong.png) no-repeat top left;
+}
+.chapter_body .exam_content .question_box .radio_box{
+    width:100%;
+    float:left;
+    position:relative;
+    margin:6px 0;
+}
+.chapter_body .exam_content .question_box .radio_box input[type="radio"] + span,
+.chapter_body .exam_content .question_box .radio_box input[type="radio"]:checked + span{
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(../images/radio.png) no-repeat;
+    background-size:100%;
+}
+.chapter_body .exam_content .question_box .radio_box input[type="radio"]:checked + span{
+    background-image:url(../images/radio_checked.png);
+}
+.chapter_body .exam_content .question_box .radio_box input{
+    display:none;
+}
+.chapter_body .exam_content .question_box .radio_box p{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:24px;
+    font-size:14px;
+    line-height:14px;
+    user-select:none;
+    color:#231815;
+}
+.chapter_body .exam_content .chapet_btn_row .left_btn{
+    margin-bottom:40px;
+    margin-top:10px;
+}
+/*领取奖品*/
+.prize_exchange_body{
+    width:1280px;
+    height:969px;
+    float:left;
+    background:url(../images/prize_exchange_bg.jpg) no-repeat top left;
+    background-size:100% 100%;
+}
+.prize_exchange_box{
+    width:556px;
+    float:left;
+    margin-left:353px;
+    margin-top:80px;
+}
+.prize_exchange_div{
+    width:480px;
+    float:left;
+    margin-left:47px;
+    box-sizing:border-box;
+    padding:30px;
+    background-color:#fff;
+    border-radius:4px;
+}
+.prize_img_box{
+    width:100%;
+    float:left;
+    position:relative;
+    margin-bottom:63px;
+}
+.prize_img_box .prize_img{
+    width:100%;
+    float:left;
+}
+.prize_img_box .prize_name{
+    width:556px;
+    position:absolute;
+    left:-76px;
+    bottom:-56px;
+}
+.prize_img_box .prize_name img{
+    width:100%;
+    float:left;
+}
+.prize_img_box .prize_name p{
+    width:430px;
+    position:absolute;
+    right:0;
+    bottom:8px;
+    font-size:18px;
+    color:#fff;
+    line-height:48px;
+    text-align:center;
+}
+.mail_info{
+    width:100%;
+    float:left;
+}
+.mail_info h1{
+    width:100%;
+    float:left;
+    font-size:36px;
+    line-height:76px;
+    color:#231815;
+    border-bottom:1px solid #c8c5c4;
+}
+.mail_info h2{
+    width:100%;
+    float:left;
+    font-size:18px;
+    line-height:24px;
+    color:#231815;
+    padding:10px 0;
+}
+.prize_exchange_div .info_input_box{
+    width:100%;
+    float:left;
+    margin-top:25px;
+}
+.prize_exchange_div .info_input_box p{
+    width:46px;
+    float:left;
+    font-size:18px;
+    line-height:32px;
+    color:#231815;
+}
+.prize_exchange_div .info_input_box input{
+    width:374px;
+    float:left;
+    box-sizing:border-box;
+    padding:5px 15px;
+    font-size:18px;
+    line-height:20px;
+    border:1px solid #c8c5c4;
+    border-radius:3px;
+}
+.mail_info .mail_btn{
+    float:right;
+    font-size:16px;
+    line-height:30px;
+    padding:0 20px;
+    margin-left:15px;
+    background-color:#312927;
+    color:#fff;
+    border-radius:3px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    margin-top:45px;
+}
+.mail_info .mail_btn:hover{
+    background-color:#777;
+}
 /**/
 /**/
 /**/

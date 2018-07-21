@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>德国会奖专家</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/StyleSheet.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#title_percent').circliful();
+        });
+    </script>
+</head>
+<body>
+    <!--页面顶部-->
+    <div class="page_top">
+        <div class="top_box">
+            <a href=""><img alt="" class="top_logo" src="images/top_logo.png" /></a>
+            <img alt="" class="top_logo" src="images/top_text.png" />
+        </div>
+    </div>
+    <!--页面顶部结束-->
+
+    <!--用户中心红色横条-->
+    <div class="ucenter_top">
+        <div class="ucenter_top_div">
+            <p>我的排名: 19位</p>
+            <p>专家称号: 216人</p>
+            <p>当前注册: 2008人</p>
+        </div>
+    </div>
+    <!--用户中心红色横条结束-->
+
+    
+    <div class="page_content_box">
+        <div class="ucenter_title_box">
+            <div class="ucenter_title">
+                <h2>个人中心</h2>
+                <img class="user_portrait" alt="" src="images/user_img.png" />
+                <h2>欢迎你：刘浩</h2>
+                <div class="complete_percent">
+                    <p>专家培训已完成</p>
+                    <!--data-text是文本显示的数字；data-percent是控制百分比进度条位置-->
+                    <div id="title_percent" data-dimension="50" data-text="31%" data-width="8" data-fontsize="14" data-percent="31" data-fgcolor="#80ba27" data-bgcolor="#fff"></div> 
+                </div>
+
+                <div class="right_btn">
+                    <img alt="" src="images/option.png" />
+                    <p>修改个人资料</p>
+                </div>
+                <div class="right_btn">
+                    <img alt="" src="images/key_b.png" />
+                    <p>修改密码</p>
+                </div>
+            </div>
+        </div>
+        <div class="ucenter_top_img">
+            <img alt="" src="images/ucenter_top_img.jpg" />
+        </div>
+
+        <div class="page_content">
+            <div class="chapter_body">
+                <!--课程菜单-->
+                <div class="menu_list">
+                    <ul>
+                        <li>
+                            <h2>.01</h2>
+                            <a href=""><p>会奖旅游目的地——德国</p></a>
+                        </li>
+                        <li>
+                            <h2>.02</h2>
+                            <a href=""><p>会奖之都——柏林</p></a>
+                        </li>
+                        <li class="active">
+                            <h2>.03</h2>
+                            <p>德国会奖精选</p>
+                            <div class="sec_menu">
+                                <a href=""><span>杜塞尔多夫</span></a>
+                                <a href=""><span>法兰克福</span></a>
+                                <a href=""><span>汉堡</span></a>
+                                <a href=""><span>汉诺威</span></a>
+                                <a href=""><span>雅高酒店</span></a>
+                                <a href=""><span class="active">TEST</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>.04</h2>
+                            <a href=""><p>德国会议促进局</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--课程菜单结束-->
+                <!--考试内容-->
+                <div class="exam_content">
+                    <h1>TEST——旅游活动服务团队</h1>
+                    <div class="question_box">
+                        <!--h2标签后面的DIV就是对错的图标，删除div，或者class置空即可隐藏图标-->
+                        <h2>1. "TEST"代表什么?</h2><div class="correct"></div>
+                        <label>
+                            <!--input标签中添加checked是选中状态-->
+                            <div class="radio_box">
+                                <input type="radio" name="q1" />
+                                <span></span>
+                                <p>旅游、展览、服务、团队</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q1" />
+                                <span></span>
+                                <p>旅游、活动、服务、团队</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q1" />
+                                <span></span>
+                                <p>贸易、展览、服务、旅行</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="question_box">
+                        <h2>2. TEST提供服务的范围是?</h2><div class="wrong"></div>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q2" />
+                                <span></span>
+                                <p>在德国和德国以外为参加交易会和大会的商务客人预订酒店、活动管理和额外服务</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q2" />
+                                <span></span>
+                                <p>在德国为参加交易会和大会的商务客人预订酒店、活动管理和额外服务</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q2" />
+                                <span></span>
+                                <p>在德国和德国以外为参加交易会和大会的商务客人预订酒店</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="question_box">
+                        <h2>3. TEST——Travel Event Service Team是您酒店预订和活动管理的全方位服务机构。TEST将那些细分市场作为核心业务提供酒店预订?</h2><div class="correct"></div>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q3" />
+                                <span></span>
+                                <p>体育赛事</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q3" />
+                                <span></span>
+                                <p>交易会和大会</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q3" />
+                                <span></span>
+                                <p>音乐会</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="question_box">
+                        <h2>1. "TEST"代表什么?</h2><div class="correct"></div>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q4" checked />
+                                <span></span>
+                                <p>15年</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q4" />
+                                <span></span>
+                                <p>20年</p>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="radio_box">
+                                <input type="radio" name="q4" />
+                                <span></span>
+                                <p>超过25年</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="chapet_btn_row">
+                        <div class="left_btn">提交</div>
+                    </div>
+                </div>
+                <!--课程内容结束-->
+            </div>
+        </div>
+        
+    </div>
+
+    <!--页面底部-->
+    <div class="page_bottom">
+        <div class="copyright_statement">
+            Copyright ©2018 All rights reserved 德国会议促进局官方网站 版权所有 （京ICP备13034256号-2）
+        </div>
+        <div class="bottom_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <div class="bottom_center">
+                <div class="wechat">
+                    <img alt="" src="images/wechat.png" />
+                    <img class="wechat_code" alt="" src="images/wechat_code.jpg" />
+                </div>
+                <a href="https://www.linkedin.com/company/german-convention-bureau/"><img class="bottom_icon" alt="" src="images/in.png" /></a>
+                <ul>
+                    <li>订阅</li>
+                    <li>版权和隐私</li>
+                    <li>网站地图</li>
+                    <li class="to_top">回到顶端</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--页面底部结束-->
+</body>
+</html>
