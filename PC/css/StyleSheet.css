@@ -1512,6 +1512,24 @@ html,div,img{
 .credential_page .credential_box .send_credential .address_input{
     width:675px;
 }
+.credential_page .credential_box .send_credential .send_btn{
+    float:right;
+    font-size:12px;
+    line-height:30px;
+    color:#fff;
+    background-color:#312927;
+    padding:0 20px;
+    margin-left:15px;
+    border-radius:3px;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    margin-top:30px;
+}
+.credential_page .credential_box .send_credential .send_btn:hover{
+    background-color:#777;
+}
 /**/
 /**/
 /**/
