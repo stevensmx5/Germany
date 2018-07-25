@@ -1438,7 +1438,80 @@ html,div,img{
     color:#231815;
     margin-top:20px;
 }
-/**/
+/*领取证书*/
+.credential_page{
+    width:1280px;
+    margin:0 auto;
+    padding:75px 235px 150px 235px;
+    box-sizing:border-box;
+    background:url(../images/credential_bg.jpg) no-repeat top left #ededed;
+    background-size:100% auto;
+    overflow:hidden;
+    border-bottom:1px solid #dedddd;
+}
+.credential_page .credential_box{
+    width:100%;
+    float:left;
+}
+.credential_page .credential_box .credential_img{
+    width:100%;
+    float:left;
+}
+.credential_page .credential_box .send_credential{
+    width:100%;
+    float:left;
+    background-color:#f50002;
+    box-sizing:border-box;
+    padding:45px;
+    border-radius:3px;
+}
+.credential_page .credential_box .send_credential h1{
+    width:100%;
+    float:left;
+    font-size:30px;
+    line-height:54px;
+    color:#fff;
+    border-bottom:1px solid #f84041;
+}
+.credential_page .credential_box .send_credential p{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;
+    margin-top:40px;
+    margin-bottom:10px;
+}
+.credential_page .credential_box .send_credential h2{
+    width:45px;
+    float:left;
+    font-size:16px;
+    line-height:30px;
+    color:#fff;
+    margin-top:15px;
+}
+.credential_page .credential_box .send_credential input{
+    float:left;
+    font-size:16px;
+    line-height:18px;
+    box-sizing:border-box;
+    padding:6px 15px;
+    color:#231815;
+    border:none;
+    background-color:#fff;
+    border-radius:4px;
+    margin-top:15px;
+}
+.credential_page .credential_box .send_credential .name_input{
+    width:210px;
+    margin-right:30px;
+}
+.credential_page .credential_box .send_credential .tel_input{
+    width:390px;
+}
+.credential_page .credential_box .send_credential .address_input{
+    width:675px;
+}
 /**/
 /**/
 /**/
