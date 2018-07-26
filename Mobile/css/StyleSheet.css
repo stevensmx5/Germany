@@ -1,0 +1,135 @@
+html,body,div,span,iframe,map,font,img,a img,samp,strong,hr,
+h1,h2,h3,h4,h5,h6,b,p,blockquote,a,address,code,dl,dt,dd,ol,
+ul,li,form,label,table,tr,td,th,input{padding:0;margin:0;border:0;font-weight:normal;font-size:16px;font-family: Microsoft Yahei, Arial, Helvetica, sans-serif; color:#606060;}
+body{background: #fff;position:relative;min-height:100%;}ul,li{list-style:none;}dl{}.f_l{float:left;}.f_r{float:right;}
+html,div,img{
+    border-image-width:0 !important;
+}
+.m_t_20{
+    margin-top:20px;
+}
+.m_b_20{
+    margin-bottom:20px;
+}
+.row{
+    width:100%;
+    float:left;
+}
+
+@font-face {
+	font-family: 'Kla_b_i';
+	src: url('../font/Klavika Bold Italic.ttf') format('truetype'),
+        url('../font/Klavika Bold Italic.otf') format('truetype') ;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_b';
+	src: url('../font/Klavika Bold.otf') format('truetype'),
+        url('../font/Klavika Bold.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_l_i';
+	src: url('../font/Klavika Light Italic.otf') format('truetype'),
+        url('../font/Klavika Light Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_l';
+	src: url('../font/Klavika Light.otf') format('truetype'),
+        url('../font/Klavika Light.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_m_i';
+	src: url('../font/Klavika Medium Italic.otf') format('truetype'),
+        url('../font/Klavika Medium Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_m';
+	src: url('../font/Klavika Medium.otf') format('truetype'),
+        url('../font/Klavika Medium.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_r_i';
+	src: url('../font/Klavika Regular Italic.otf') format('truetype'),
+        url('../font/Klavika Regular Italic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Kla_r';
+	src: url('../font/Klavika Regular.otf') format('truetype'),
+        url('../font/Klavika Regular.ttf') format('truetype');
+	font-style: normal;
+}
+.top_bar{
+    width:100%;
+    float:left;
+    border-top:10px solid #f40002;
+    background: -moz-linear-gradient(top, #fff, #eee); 
+    background: -webkit-gradient(linear,top,from(#fff),to(#eee));
+    background: -webkit-linear-gradient(top, #fff, #eee);
+    background: -o-linear-gradient(top, #fff, #eee);
+    box-sizing:border-box;
+    padding:8px 15px;
+}
+.top_bar .top_logo{
+    height:26px;
+    float:left;
+}
+.top_bar .menu_btn{
+    width:26px;
+    height:26px;
+    float:right;
+}
+.index_lesson_box{
+    width:100%;
+    float:left;
+    background:url(../images/index_lesson_bg.jpg) #ededed no-repeat top left;
+    background-size:100% auto;
+    box-sizing:border-box;
+    padding:25px 40px;
+}
+.index_lesson_box h2{
+    width:100%;
+    float:left;
+    font-size:18px;
+    line-height:24px;
+    color:#231815;
+    text-align:center;
+}
+.index_lesson_box .lesson_div{
+    width:100%;
+    float:left;
+    margin-top:20px;
+}
+.index_lesson_box .lesson_div .lesson_text{
+    width:100%;
+    float:left;
+    border-top:3px solid #f40002;
+    box-sizing:border-box;
+    padding:10px 15px;
+    background-color:#fff;
+}
+.index_lesson_box .lesson_div .lesson_text p{
+    width:75%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#231815;
+}
+.index_lesson_box .lesson_div .lesson_text h3{
+    width:25%;
+    float:left;
+    text-align:right;
+    font-family:Kla_l_i;
+    font-size:30px;
+    line-height:30px;
+    color:#ededed;
+}
+.index_lesson_box .lesson_div .lesson_text img{
+    height:30px;
+    float:right;
+}
