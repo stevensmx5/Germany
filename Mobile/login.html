@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>德国会奖专家</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/StyleSheet.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.wechat_icon').click(function () {
+                var dis = $('.wechat_code').css("display");
+                if (dis == 'none') {
+                    $('.wechat_code').removeClass('dis_n');
+                }else if(dis=='block'){
+                    $('.wechat_code').addClass('dis_n');
+                }
+            });
+        });
+    </script>
+    <style>
+        body{
+            background:url(images/login_bg.png) no-repeat #ededed top left;
+            background-size:100% auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="menu_btn" alt="" src="images/menu_icon.png" />
+    </div>
+
+    <div class="login_page">
+        <div class="login_box">
+            <div class="login_title">
+                <img alt="" src="images/user_icon.png" />
+                <h2>会员登录</h2>
+            </div>
+            <div class="input_box">
+                <img alt="" src="images/mail_icon.png" />
+                <input type="text" placeholder="用户名（必填为邮箱）" />
+            </div>
+            <div class="input_box">
+                <img alt="" src="images/pwd_icon.png" />
+                <input type="password" placeholder="输入密码" />
+            </div>
+            <div class="login_btn">登&nbsp;录<img alt="" src="images/arrow_icon.png" /></div>
+        </div>
+        <a><p class="forgot_pwd">忘记密码?</p></a>
+    </div>
+</body>
+</html>

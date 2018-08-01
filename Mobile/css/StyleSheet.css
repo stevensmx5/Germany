@@ -15,6 +15,9 @@ html,div,img{
     width:100%;
     float:left;
 }
+.dis_n{
+    display:none;
+}
 
 @font-face {
 	font-family: 'Kla_b_i';
@@ -92,7 +95,9 @@ html,div,img{
     box-sizing:border-box;
     padding:25px 40px;
 }
-.index_lesson_box h2{
+.index_lesson_box h2,
+.pro_partner_box h2,
+.str_partner_box h2{
     width:100%;
     float:left;
     font-size:18px;
@@ -132,4 +137,334 @@ html,div,img{
 .index_lesson_box .lesson_div .lesson_text img{
     height:30px;
     float:right;
+}
+.pro_partner_box,
+.str_partner_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:30px;
+    background-color:#fff;
+}
+.pro_partner_box h2,
+.str_partner_box h2{
+    margin-bottom:10px;
+}
+.pro_partner_box img{
+    width:45%;
+    float:left;
+    margin:6px 0;
+}
+.pro_partner_box a:nth-child(2n) img{
+    margin-right:10%;
+}
+.prize_box{
+    width:100%;
+    float:left;
+    background:url(../images/prize_box_bg.jpg) no-repeat #e86666 top left;
+    background-size:100% auto;
+}
+.prize_box .prize_text_img,
+.prize_box .prize_content .prize_zj_div .prize_zj_img,
+.prize_content .prize_zj_div .prize_zj_bar img,
+.prize_content .prize_div .prize_img_box .prize_img,
+.prize_content .prize_div .prize_img_box .prize_bar img,
+.bottom_red_box img{
+    width:100%;
+    float:left;
+}
+.prize_box .prize_content{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:15px 8%;
+}
+.prize_box .prize_content .prize_btn{
+    width:34%;
+    float:left;
+    font-size:13px;
+    line-height:30px;
+    color:#fff;
+    background-color:#231815;
+    border-radius:3px;
+    text-align:center;
+}
+.prize_box .prize_content .prize_zj_div{
+    width:60%;
+    float:right;
+    background-color:#fff;
+    border-radius:3px;
+    box-sizing:border-box;
+    padding:10px 10px 20px 10px;
+    position:relative;
+    box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.4);
+}
+.prize_box .prize_content .prize_zj_div h2,
+.prize_box .prize_content .prize_div h2{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:20px;
+    color:#f40002;
+    margin-top:8px;
+}
+.prize_content .prize_zj_div .prize_zj_bar{
+    width:94px;
+    position:absolute;
+    top:15px;
+    right:-15px;
+}
+.prize_content .prize_zj_div .prize_zj_bar p{
+    width:100%;
+    float:left;
+    font-size:13px;
+    line-height:22px;
+    color:#fff;
+    text-align:center;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.prize_box .prize_content .prize_div{
+    width:47%;
+    float:left;
+    background-color:#fff;
+    border-radius:3px;
+    box-sizing:border-box;
+    padding:10px;
+    position:relative;
+    margin-top:15px;
+    box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.4);
+}
+.prize_box .prize_content .prize_div:nth-child(2n){
+    margin-left:6%;
+}
+.prize_box .prize_content .prize_div h2{
+    font-size:13px;
+}
+.prize_box .prize_content .prize_div p{
+    width:100%;
+    float:left;
+    font-size:10px;
+    color:#231815;
+    line-height:12px;
+    margin-top:10px;
+}
+.prize_box .prize_content .prize_div .prize_img_box{
+    width:100%;
+    float:left;
+    position:relative;
+}
+.prize_img_box .prize_bar{
+    width:80px;
+    float:left;
+    position:absolute;
+    bottom:-15px;
+    right:-4px;
+}
+.prize_img_box .prize_bar h3,
+.prize_img_box .prize_bar h4{
+    position:absolute;
+    font-size:13px;
+    color:#fff;
+    text-align:center;
+}
+.prize_img_box .prize_bar h3{
+    width:58px;
+    top:0;
+    left:0;
+    line-height:24px;
+}
+.prize_img_box .prize_bar h4{
+    width:22px;
+    bottom:0;
+    right:0;
+    line-height:22px;
+}
+.str_partner_box img{
+    width:30%;
+    float:left;
+    margin:10px 5% 5px 0;
+}
+.str_partner_box a:nth-child(3n+1) img{
+    margin-right:0;
+}
+.bottom_red_box{
+    width:100%;
+    float:left;
+    background-color:#f40002;
+}
+.bottom_red_box .bottom_red_btn{
+    float:left;
+    font-size:14px;
+    line-height:30px;
+    color:#fff;
+    padding:0 10px;
+    border-radius:3px;
+    background-color:#231815;
+    transform:translateX(-50%);
+    margin:20px 0 20px 50%;
+}
+.page_bottom{
+    width:100%;
+    float:left;
+}
+.page_bottom .copyright_statement{
+    width:100%;
+    float:left;
+    font-size:7px;
+    color:#231815;
+    line-height:11px;
+    background-color:#ededed;
+    text-align:center;
+    padding:8px 10px;
+    box-sizing:border-box;
+}
+.page_bottom .bottom_box{
+    width:100%;
+    float:left;
+    background-color:#aaaaaa;
+    box-sizing:border-box;
+    padding:8px 15px 15px 15px;
+}
+.page_bottom .bottom_box .bottom_logo{
+    height:20px;
+    float:left;
+}
+.page_bottom .bottom_box .bottom_center{
+    float:right;
+}
+.page_bottom .bottom_box .bottom_center .wechat,
+.page_bottom .bottom_box .bottom_center .bottom_icon{
+    float:left;
+    height:18px;
+    margin-right:8px;
+    margin-top:2px;
+    position:relative;
+}
+.page_bottom .bottom_box .bottom_center .wechat img{
+    height:100%;
+    float:left;
+}
+.page_bottom .bottom_box .bottom_center .wechat .wechat_code{
+    width:100px;
+    height:100px;
+    border:2px solid #777;
+    position:absolute;
+    top:-120px;
+    left:-20px;
+}
+.page_bottom .bottom_box .bottom_center ul{
+    float:left;
+}
+.page_bottom .bottom_box .bottom_center li{
+    float:left;
+    font-size:10px;
+    line-height:10px;
+    color:#231815;
+    border-left:1px solid #231815;
+    padding:0 7px;
+    margin-top:8px;
+}
+
+/*µÇÂ¼Ò³Ãæ*/
+.login_page{
+    width:100%;
+    min-height:480px;
+    float:left;
+    box-sizing:border-box;
+    padding:120px 20px;
+    position:relative;
+}
+.login_box{
+    width:100%;
+    float:left;
+}
+.login_box .login_title{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0 15px;
+}
+.login_box .login_title img{
+    width:20px;
+    height:20px;
+    float:left;
+}
+.login_box .login_title h2{
+    float:left;
+    margin-left:20px;
+    font-size:14px;
+    line-height:20px;
+    color:#231815;
+    font-weight:bold;
+}
+.login_box .input_box{
+    width:100%;
+    float:left;
+    border:1px solid #000;
+    border-radius:5px;
+    background-color:#f5f5f5;
+    box-sizing:border-box;
+    padding:7px 14px 7px 54px;
+    position:relative;
+    margin-top:15px;
+}
+.login_box .input_box img{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:7px;
+    left:15px;
+}
+.login_box .input_box input{
+    width:100%;
+    float:left;
+    font-size:14px;
+    line-height:20px;
+    color:#231815;
+    background-color:#f5f5f5;
+}
+.login_box .input_box input::-webkit-input-placeholder {
+    color:#7a86a4;
+}
+.login_box .input_box input:-moz-placeholder {
+    color:#7a86a4;
+}
+.login_box .input_box input::-moz-placeholder {
+    color:#7a86a4;
+}
+.login_box .input_box input:-ms-input-placeholder {
+    color:#7a86a4;
+}
+.login_box .login_btn{
+    width:100%;
+    float:left;
+    background-color:#312927;
+    font-size:18px;
+    line-height:36px;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    border-radius:5px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+    margin-top:30px;
+}
+.login_box .login_btn img{
+    width:14px;
+    height:14px;
+    position:absolute;
+    top:13px;
+    left:50%;
+    margin-left:27px;
+}
+.login_page .forgot_pwd{
+    position:absolute;
+    float:left;
+    font-size:13px;
+    color:#202020;
+    line-height:15px;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
 }
