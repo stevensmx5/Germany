@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>德国会奖专家</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/StyleSheet.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.lesson_div h3').click(function () {
+                $('.lesson_div').removeClass('active');
+                $('.lesson_div ul').slideUp(500);
+                $(this).parent('.lesson_div').addClass('active');
+                $(this).siblings('ul').slideDown(500);
+            });
+            $('.lesson_div li').click(function () {
+                $('.lesson_div li').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    <style>
+        body {
+            background: url(images/chapter_bg.png) no-repeat #fff;
+            background-size: 100% auto;
+            background-position:0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="menu_btn" alt="" src="images/menu_icon.png" />
+    </div>
+
+    <div class="chapter_body">
+        <div class="user_box">
+            <img class="user_icon" alt="" src="images/user_photo.png" />
+            <div class="userinfo_box">
+                <!--注释的部分为单独的登陆按钮
+                <div class="login_btn f_l">登录</div>-->
+
+                <!--用户信息开始-->
+                <h2>欢迎你，李阳！</h2>
+                <div class="row">
+                    <div class="ucenter_btn f_l">个人中心</div>
+                    <div class="logout_btn f_r">退出</div>
+                </div>
+                <div class="row">
+                    <div class="edit_btn f_l">
+                        <img alt="" src="images/option_icon.png" />
+                        <p>修改个人资料</p>
+                    </div>
+                    <div class="edit_btn f_r">
+                        <img alt="" src="images/option_icon.png" />
+                        <p>修改密码</p>
+                    </div>
+                </div>
+                <!--用户信息结束-->
+            </div>
+        </div>
+        <div class="lesson_list">
+            <div class="lesson_title">
+                <img alt="" src="images/bookmark_icon.png" />
+                <h2>进入课堂</h2>
+            </div>
+            <div class="lesson_div">
+                <h2>.01</h2>
+                <h3>会奖旅游目的地——德国</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+            <div class="lesson_div">
+                <h2>.02</h2>
+                <h3>会奖之都——柏林</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+            <div class="lesson_div">
+                <h2>.03</h2>
+                <h3>德国会奖精选</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+                <ul>
+                    <li>杜塞尔多夫</li>
+                    <li>法兰克福</li>
+                    <li>汉堡</li>
+                    <li>汉诺威</li>
+                    <li>Accor</li>
+                    <li>TEST</li>
+                </ul>
+            </div>
+            <div class="lesson_div">
+                <h2>.04</h2>
+                <h3>德国会议促进局</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

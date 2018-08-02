@@ -5,6 +5,12 @@ body{background: #fff;position:relative;min-height:100%;}ul,li{list-style:none;}
 html,div,img{
     border-image-width:0 !important;
 }
+.f_l{
+    float:left;
+}
+.f_r{
+    float:right;
+}
 .m_t_20{
     margin-top:20px;
 }
@@ -467,4 +473,160 @@ html,div,img{
     bottom:30px;
     left:50%;
     transform:translateX(-50%);
+}
+/*¿Î³ÌÒ³Ãæ*/
+.chapter_body{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:30px 20px;
+}
+.chapter_body .user_box{
+    width:100%;
+    float:left;
+    position:relative;
+}
+.chapter_body .user_box .user_icon{
+    width:70px;
+    height:70px;
+    position:absolute;
+    top:0;
+    left:10px;
+}
+.chapter_body .user_box .userinfo_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:100px;
+    min-height:70px;
+}
+.chapter_body .user_box .userinfo_box h2{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:30px;
+    color:#000;
+    font-weight:bold;
+    margin-top:3px;
+}
+.chapter_body .user_box .userinfo_box .login_btn,
+.chapter_body .user_box .userinfo_box .ucenter_btn,
+.chapter_body .user_box .userinfo_box .logout_btn{
+    font-size:14px;
+    line-height:24px;
+    padding:0 15px;
+    border-radius:4px;
+    border:1px solid #f40002;
+    margin-bottom:10px;
+}
+.chapter_body .user_box .userinfo_box .login_btn{
+    background-color:#fff;
+    color:#f40002;
+    margin-top:22px;
+}
+.chapter_body .user_box .userinfo_box .ucenter_btn{
+    background-color:#f40002;
+    color:#fff;
+}
+.chapter_body .user_box .userinfo_box .logout_btn{
+    background-color:#fff;
+    color:#f40002;
+}
+.chapter_body .user_box .userinfo_box .edit_btn{
+    margin-top:15px;
+}
+.chapter_body .user_box .userinfo_box .edit_btn img{
+    height:12px;
+    float:left;
+    margin-right:3px;
+}
+.chapter_body .user_box .userinfo_box .edit_btn p{
+    float:left;
+    font-size:12px;
+    line-height:12px;
+    color:#231815;
+    text-decoration:underline;
+}
+.chapter_body .lesson_list{
+    width:100%;
+    float:left;
+    margin-top:30px;
+}
+.chapter_body .lesson_list .lesson_title{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:8px 10px;
+    border-bottom:2px solid #000;
+}
+.chapter_body .lesson_list .lesson_title img{
+    height:18px;
+    float:left;
+    margin-right:10px;
+}
+.chapter_body .lesson_list .lesson_title h2{
+    float:left;
+    font-size:16px;
+    line-height:16px;
+    color:#f40002;
+}
+.chapter_body .lesson_list .lesson_div{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:10px 0 10px 10px;
+    border-bottom:1px solid #000;
+    position:relative;
+}
+.chapter_body .lesson_list .lesson_div h2,
+.chapter_body .lesson_list .lesson_div h3{
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#231815;
+}
+.chapter_body .lesson_list .lesson_div h2{
+    font-size:18px;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.chapter_body .lesson_list .lesson_div h3{
+    width:100%;
+    box-sizing:border-box;
+    padding-left:28px;
+    position:relative;
+    z-index:5;
+}
+.chapter_body .lesson_list .lesson_div img{
+    width:18px;
+    height:18px;
+    position:absolute;
+    right:0;
+    top:10px;
+    -moz-transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    transition: all 0.5s 0s;
+}
+.chapter_body .lesson_list .lesson_div.active h2,
+.chapter_body .lesson_list .lesson_div.active h3,
+.chapter_body .lesson_list .lesson_div ul .active{
+    font-weight:bold;
+}
+.chapter_body .lesson_list .lesson_div.active img{
+    transform:rotateZ(90deg);
+}
+.chapter_body .lesson_list .lesson_div ul{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:7px 0 0 28px;
+    display:none;
+}
+.chapter_body .lesson_list .lesson_div ul li{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:28px;
+    color:#231815;
 }

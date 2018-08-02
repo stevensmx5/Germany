@@ -1052,6 +1052,29 @@ html,div,img{
     float:left;
     margin-top:40px;
 }
+.chapter_body .chapter_content .chapter_text h2{
+    width:100%;
+    float:left;
+    font-size:18px;
+    color:#231815;
+    font-weight:bold;
+	line-height:24px;
+	margin-bottom:25px;
+}
+.chapter_body .chapter_content .chapter_text strong{
+	color:#231815;
+    font-weight:bold;
+	line-height:24px;
+	font-size:14px;
+}
+.chapter_body .chapter_content .chapter_text a{
+    font-size:14px;
+    color:#c00;
+	text-decoration: none;
+}
+.chapter_body .chapter_content .chapter_text a:hover{
+	text-decoration:underline;
+}
 .chapter_body .chapter_content .chapter_text p{
     width:100%;
     float:left;
@@ -1064,6 +1087,13 @@ html,div,img{
     width:100% !important;
     margin:5px 0 !important;
     float:left !important;
+}
+.chapter_body .chapter_content .chapter_text span{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    color:#a9a9a9;
 }
 .chapter_body .chapter_content .chapet_btn_row,
 .chapter_body .exam_content .chapet_btn_row{
