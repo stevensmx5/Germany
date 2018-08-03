@@ -630,3 +630,143 @@ html,div,img{
     line-height:28px;
     color:#231815;
 }
+/*–ﬁ∏ƒÕ∑œÒ*/
+.modify_photo_page,
+.password_page{
+    width:100%;
+    float:left;
+    min-height:430px;
+}
+.pos_fix{
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+.modify_title{
+    width:100%;
+    float:left;
+    border-bottom:1px solid #d5d5d5;
+    box-sizing:border-box;
+    padding:10px 15px;
+}
+.modify_title img{
+    height:18px;
+    float:left;
+    margin-right:8px;
+}
+.modify_title h2{
+    float:left;
+    font-size:14px;
+    line-height:18px;
+    color:#656565;
+}
+.modify_photo_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:15px;
+}
+.modify_photo_box img{
+    width:120px;
+    height:120px;
+    float:left;
+    margin:50px 0 50px 50%;
+    border-radius:50%;
+    transform:translateX(-50%);
+}
+.modify_btn{
+    width:100%;
+    float:left;
+    font-size:14px;
+    line-height:36px;
+    color:#fff;
+    background-color:#312927;
+    border-radius:4px;
+    text-align:center;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+    margin-bottom:30px;
+}
+/*’“ªÿ√‹¬Î*/
+.password_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:40px 15px;
+}
+.password_box h2{
+    width:100%;
+    float:left;
+    font-size:14px;
+    line-height:18px;
+    text-align:center;
+    color:#595757;
+    margin-bottom:30px;
+}
+.input_box{
+    width:100%;
+    float:left;
+    margin-bottom:20px;
+    position:relative;
+}
+.input_box p,
+.input_box span{
+    float:left;
+    font-size:12px;
+    line-height:14px;
+}
+.input_box p{
+    color:#595757;
+}
+.input_box span{
+    color:#f40002;
+    margin-left:3px;
+}
+.input_box .check_img{
+    width:12px;
+    height:12px;
+    float:left;
+    margin:1px 10px;
+}
+.input_box input{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:14px;
+    border:1px solid #8e8e8e;
+    border-radius:3px;
+    box-sizing:border-box;
+    padding:8px 10px;
+    margin-top:8px;
+}
+.input_box .pas_lev{
+    width:100%;
+    float:left;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+}
+.input_box .pas_lev li{
+    width:50px;
+    height:4px;
+    float:left;
+    margin-right:5px;
+    display:none;
+}
+.input_box .pas_lev li.lev_1{
+    background-color:#fdd9d9;
+}
+.input_box .pas_lev li.lev_2{
+    background-color:#fba6a7;
+}
+.input_box .pas_lev li.lev_3{
+    background-color:#f97374;
+}
+.input_box .pas_lev li.lev_4{
+    background-color:#f84041;
+}
+.input_box .pas_lev li.lev_5{
+    background-color:#f50002;
+}
+.password_box .modify_btn{
+    margin-top:30px;
+}
