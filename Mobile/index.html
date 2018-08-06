@@ -18,16 +18,18 @@
                     $('.wechat_code').addClass('dis_n');
                 }
             });
-
+            //右上角菜单点击事件
             $('.menu_btn').click(function () {
                 var l = $('.menu_body').attr('class');
-                if (l.indexOf('menu_show')>=0) {
+                if (l.indexOf('menu_show') >= 0) {
+                    $('.menu_btn').attr('src', 'images/menu_icon.png')
                     $('.menu_body').removeClass('menu_show');
                 } else {
+                    $('.menu_btn').attr('src', 'images/menu_icon_open.png')
                     $('.menu_body').addClass('menu_show');
                 }
             });
-
+            //课程列表一级菜单点击事件
             $('.lesson_bar h3').click(function () {
                 var cla = $(this).parent('.lesson_bar').attr('class')
                 if (cla.indexOf('active') >= 0) {
@@ -41,6 +43,7 @@
                 }
                 
             });
+            //课程列表二级菜单点击事件
             $('.lesson_bar li').click(function () {
                 $('.lesson_bar li').removeClass('active');
                 $(this).addClass('active');
@@ -60,7 +63,6 @@
             <div class="userinfo_box">
                 <!--注释的部分为单独的登陆按钮
                 <div class="login_btn f_l">登录</div>-->
-                <!--用户信息开始-->
                 <h2>欢迎你，李阳！</h2>
                 <div class="row">
                     <div class="ucenter_btn f_l">个人中心</div>
@@ -76,7 +78,6 @@
                         <p>修改密码</p>
                     </div>
                 </div>
-                <!--用户信息结束-->
             </div>
         </div>
         <div class="lesson_list">
@@ -123,28 +124,28 @@
             <img class="row" alt="" src="images/image_01.jpg" />
             <div class="lesson_text">
                 <p>会奖旅游目的地——德国</p>
-                <img alt="" src="images/num_1.jpg" />
+                <h3>.01</h3>
             </div>
         </div>
         <div class="lesson_div">
             <img class="row" alt="" src="images/image_02.jpg" />
             <div class="lesson_text">
                 <p>会奖之都——柏林</p>
-                <img alt="" src="images/num_2.jpg" />
+                <h3>.02</h3>
             </div>
         </div>
         <div class="lesson_div">
             <img class="row" alt="" src="images/image_03.jpg" />
             <div class="lesson_text">
                 <p>德国会奖精选</p>
-                <img alt="" src="images/num_3.jpg" />
+                <h3>.03</h3>
             </div>
         </div>
         <div class="lesson_div">
             <img class="row" alt="" src="images/image_04.jpg" />
             <div class="lesson_text">
                 <p>德国会议促进局</p>
-                <img alt="" src="images/num_4.jpg" />
+                <h3>.04</h3>
             </div>
         </div>
     </div>

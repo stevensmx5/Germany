@@ -29,10 +29,11 @@ body{
     width:100%;
     float:left;
 }
-.dis_n{
+.dis_n,
+.dis{
     display:none;
 }
-
+/*
 @font-face {
 	font-family: 'Kla_b_i';
 	src: url('../font/Klavika Bold Italic.ttf') format('truetype'),
@@ -80,7 +81,7 @@ body{
 	src: url('../font/Klavika Regular.otf') format('truetype'),
         url('../font/Klavika Regular.ttf') format('truetype');
 	font-style: normal;
-}
+}*/
 .top_bar{
     width:100%;
     float:left;
@@ -143,10 +144,10 @@ body{
     width:25%;
     float:left;
     text-align:right;
-    font-family:Kla_l_i;
     font-size:30px;
     line-height:30px;
     color:#ededed;
+    font-style:italic
 }
 .index_lesson_box .lesson_div .lesson_text img{
     height:30px;
@@ -514,6 +515,7 @@ body{
     -moz-transition: all 0.5s 0s;
     -webkit-transition: all 0.5s 0s;
     transition: all 0.5s 0s;
+    z-index:1000;
 }
 .menu_body.menu_show{
     left:0;
@@ -563,6 +565,7 @@ body{
     background-color:#fff;
     color:#f40002;
     margin-top:22px;
+    margin-right:10px;
 }
 .menu_body .user_box .userinfo_box .ucenter_btn{
     background-color:#f40002;
@@ -933,4 +936,215 @@ body{
     width:100%;
     float:left;
     margin-bottom:40px;
+}
+/*弹出框*/
+.alert_body{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+.alert_bg{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+}
+.alert_body .alert_box{
+    width:90%;
+    box-sizing:border-box;
+    padding:20px;
+    background-color:#f50002;
+    position:absolute;
+    top:50%;
+    left:5%;
+    transform:translateY(-50%);
+}
+.alert_body .alert_box .alert_icon{
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+.alert_body .alert_box .alert_content{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:65px;
+}
+.alert_body .alert_box .alert_content h2{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #fff;
+    color:#fff;
+}
+.alert_body .alert_box .alert_content h3{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    padding:15px 0;
+    color:#fff;
+}
+.alert_body .alert_box .alert_content p{
+    width:90%;
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    color:#fff;
+    margin-top:6px;
+}
+.alert_body .alert_box .alert_content a{
+    width:90%;
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    color:#fff;
+    margin-top:6px;
+}
+.alert_body .alert_box .alert_btn_row{
+    width:100%;
+    float:left;
+    margin-top:15px;
+}
+.alert_btn_row .alert_btn{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:30px;
+    border-radius:3px;
+    text-align:center;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    background-color:#312927;
+    color:#fff;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+    margin-top:20px;
+}
+.alert_btn_row .alert_btn:active{
+    background-color:#777;
+}
+.alert_btn_row .cancel_btn{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:30px;
+    color:#444;
+    background-color:#c9c9ca;
+    border-radius:3px;
+    text-align:center;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+    margin-top:15px;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.alert_btn_row .cancel_btn:active{
+    background-color:#b6b6b6;
+}
+/*领取证书*/
+.credential_page,
+.credential_box,
+.credential_page .credential_box .credential_img{
+    width:100%;
+    float:left;
+}
+.credential_page .credential_box .send_credential{
+    width:100%;
+    float:left;
+    background-color:#f50002;
+    box-sizing:border-box;
+    padding:15px 20px;
+}
+.credential_page .credential_box .send_credential h1{
+    width:100%;
+    float:left;
+    font-size:22px;
+    line-height:28px;
+    color:#fff;
+    border-bottom:1px solid #f84041;
+    padding-bottom:6px;
+}
+.credential_page .credential_box .send_credential p{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    color:#fff;
+    margin-top:25px;
+    margin-bottom:8px;
+}
+.credential_page .credential_box .send_credential h2{
+    width:45px;
+    float:left;
+    font-size:16px;
+    line-height:30px;
+    color:#fff;
+    margin-top:15px;
+    display:none;
+}
+.credential_page .credential_box .send_credential input{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:18px;
+    box-sizing:border-box;
+    padding:6px 15px;
+    color:#231815;
+    border:none;
+    background-color:#fff;
+    border-radius:5px;
+    margin-top:8px;
+}
+.credential_box .send_credential input::-webkit-input-placeholder {
+    color:#7a86a4;
+}
+.credential_box .send_credential input:-moz-placeholder {
+    color:#7a86a4;
+}
+.credential_box .send_credential input::-moz-placeholder {
+    color:#7a86a4;
+}
+.credential_box .send_credential input:-ms-input-placeholder {
+    color:#7a86a4;
+}
+.credential_page .credential_box .send_btn_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:15px 20px;
+    background-color:#fff;
+}
+.credential_page .credential_box .send_btn_box .send_btn,
+.credential_page .credential_box .send_btn_box .cancel_btn{
+    width:100%;
+    float:right;
+    font-size:14px;
+    line-height:36px;
+    border-radius:3px;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    margin-bottom:10px;
+    text-align:center;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+}
+.credential_page .credential_box .send_btn_box .send_btn{
+    color:#fff;
+    background-color:#312927;
+}
+.credential_page .credential_box .send_btn_box .cancel_btn{
+    color:#444;
+    background-color:#c9c9ca;
+}
+.credential_page .credential_box .send_btn_box .send_btn:active{
+    background-color:#777;
+}
+.credential_page .credential_box .send_btn_box .cancel_btn:active{
+    background-color:#b6b6b6;
 }
