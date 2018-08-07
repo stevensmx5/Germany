@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>德国会奖专家</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/StyleSheet.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.wechat_icon').click(function () {
+                var dis = $('.wechat_code').css("display");
+                if (dis == 'none') {
+                    $('.wechat_code').removeClass('dis_n');
+                }else if(dis=='block'){
+                    $('.wechat_code').addClass('dis_n');
+                }
+            });
+            //右上角菜单点击事件
+            $('.menu_btn').click(function () {
+                var l = $('.menu_body').attr('class');
+                if (l.indexOf('menu_show') >= 0) {
+                    $('.menu_btn').attr('src', 'images/menu_icon.png')
+                    $('.menu_body').removeClass('menu_show');
+                } else {
+                    $('.menu_btn').attr('src', 'images/menu_icon_open.png')
+                    $('.menu_body').addClass('menu_show');
+                }
+            });
+            //课程列表一级菜单点击事件
+            $('.lesson_bar h3').click(function () {
+                var cla = $(this).parent('.lesson_bar').attr('class')
+                if (cla.indexOf('active') >= 0) {
+                    $(this).parent('.lesson_bar').removeClass('active');
+                    $(this).siblings('ul').slideUp(500);
+                } else {
+                    $('.lesson_bar').removeClass('active');
+                    $('.lesson_bar ul').slideUp(500);
+                    $(this).parent('.lesson_bar').addClass('active');
+                    $(this).siblings('ul').slideDown(500);
+                }
+                
+            });
+            //课程列表二级菜单点击事件
+            $('.lesson_bar li').click(function () {
+                $('.lesson_bar li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            var percent_num = $('.user_pohoto_box h2').data('percent')+'%';
+            $('.percent_box .percent_div').css('width', percent_num);
+
+            $('#lesson_percent_1').circliful();
+            $('#lesson_percent_2').circliful();
+        });
+    </script>
+</head>
+<body>
+    <div class="top_bar">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="menu_btn" alt="" src="images/menu_icon.png" />
+    </div>
+    <!--右侧菜单-->
+    <div class="menu_body">
+        <div class="user_box">
+            <img class="user_icon" alt="" src="images/user_photo.png" />
+            <div class="userinfo_box">
+                <!--注释的部分为单独的登陆按钮
+                <div class="login_btn f_l">登录</div>-->
+                <h2>欢迎你，李阳！</h2>
+                <div class="row">
+                    <div class="ucenter_btn f_l">个人中心</div>
+                    <div class="logout_btn f_r">退出</div>
+                </div>
+                <div class="row">
+                    <div class="edit_btn f_l">
+                        <img alt="" src="images/option_icon.png" />
+                        <p>修改个人资料</p>
+                    </div>
+                    <div class="edit_btn f_r">
+                        <img alt="" src="images/option_icon.png" />
+                        <p>修改密码</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lesson_list">
+            <div class="lesson_title">
+                <img alt="" src="images/bookmark_icon.png" />
+                <h2>进入课堂</h2>
+            </div>
+            <div class="lesson_bar">
+                <h2>.01</h2>
+                <h3>会奖旅游目的地——德国</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+            <div class="lesson_bar">
+                <h2>.02</h2>
+                <h3>会奖之都——柏林</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+            <div class="lesson_bar">
+                <h2>.03</h2>
+                <h3>德国会奖精选</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+                <ul>
+                    <li>杜塞尔多夫</li>
+                    <li>法兰克福</li>
+                    <li>汉堡</li>
+                    <li>汉诺威</li>
+                    <li>Accor</li>
+                    <li>TEST</li>
+                </ul>
+            </div>
+            <div class="lesson_bar">
+                <h2>.04</h2>
+                <h3>德国会议促进局</h3>
+                <img alt="" src="images/arrow_bottom.png" />
+            </div>
+        </div>
+    </div>
+    <!--右侧菜单结束-->
+
+    <div class="ucenter_page">
+        <div class="userinfo_box">
+            <div class="user_pohoto_box">
+                <img alt="" src="images/ucenter_photo.png" />
+                <h2 data-percent="31">31%</h2>
+                <div class="percent_box">
+                    <div class="percent_div"></div>
+                </div>
+                <p>专家培训已完成</p>
+            </div>
+            <h3>个人中心</h3>
+            <h4>欢迎你，李阳</h4>
+        </div>
+        <div class="ucenter_num_box">
+            <div class="ucenter_num_div">
+                <h2>2008</h2>
+                <p>当前注册（人）</p>
+            </div>
+            <div class="ucenter_num_div">
+                <h2>465</h2>
+                <p>专家称号（人）</p>
+            </div>
+            <div class="ucenter_num_div">
+                <h2>19</h2>
+                <p>目前排名（位）</p>
+            </div>
+        </div>
+
+        <div class="ucenter_lesson_box">
+            <h1>你的专家课程</h1>
+            <div class="lesson_box">
+                <img alt="" src="images/image_01.jpg" />
+                <div class="lesson_text">
+                    <h2>.01</h2>
+                    <h3>会奖旅游目的地——德国</h3>
+                    <div class="lesson_percent">
+                        <p>已学习</p>
+                        <div class="percent_round" id="lesson_percent_1" data-dimension="50" data-text="46%" data-width="3" data-fontsize="14" data-percent="46" data-fgcolor="#80ba27" data-bgcolor="#ededed"></div> 
+                        <div class="lesson_btn go_study">继续学习</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson_box">
+                <img alt="" src="images/image_02.jpg" />
+                <div class="lesson_text">
+                    <h2>.02</h2>
+                    <h3>会奖之都——柏林</h3>
+                    <div class="lesson_percent">
+                        <div class="lesson_btn begin_study">开始学习</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson_box">
+                <img alt="" src="images/image_03.jpg" />
+                <div class="lesson_text">
+                    <h2>.03</h2>
+                    <h3>德国会奖精选</h3>
+                    <div class="lesson_percent">
+                        <div class="lesson_btn begin_study">开始学习</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson_box">
+                <img alt="" src="images/image_04.jpg" />
+                <div class="lesson_text">
+                    <h2>.04</h2>
+                    <h3>德国会议促进局</h3>
+                    <div class="lesson_percent">
+                        <p>已学习</p>
+                        <div class="percent_round" id="lesson_percent_2" data-dimension="50" data-text="100%" data-width="3" data-fontsize="14" data-percent="100" data-fgcolor="#80ba27" data-bgcolor="#ededed"></div>
+                        <div class="lesson_btn finish_study">已完成</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prize_box">
+            <img class="prize_text_img" alt="" src="images/prize_box_text_img.png" />
+            <div class="prize_content">
+                <div class="prize_btn">立刻登录课堂</div>
+                <div class="prize_zj_div">
+                    <img class="prize_zj_img" alt="" src="images/prize_zj.jpg" />
+                    <h2>双立人（ZWILLIMG）多工具钥匙环</h2>
+                    <div class="prize_zj_bar">
+                        <img alt="" src="images/prize_zj_bar.png" />
+                        <p>专家礼品</p>
+                    </div>
+                </div>
+                <div class="prize_div">
+                    <div class="prize_img_box">
+                        <img class="prize_img" alt="" src="images/prize_1.jpg" />
+                        <div class="prize_bar">
+                            <img alt="" src="images/prize_bar.png" />
+                            <h3>专家礼品</h3>
+                            <h4>1</h4>
+                        </div>
+                    </div>
+                    <h2>时尚旅行包</h2>
+                    <p>数量：随机发送，送完即止</p>
+                </div>
+                <div class="prize_div">
+                    <div class="prize_img_box">
+                        <img class="prize_img" alt="" src="images/prize_2.jpg" />
+                        <div class="prize_bar">
+                            <img alt="" src="images/prize_bar.png" />
+                            <h3>专家礼品</h3>
+                            <h4>2</h4>
+                        </div>
+                    </div>
+                    <h2>高保真耳机</h2>
+                    <p>数量：随机发送，送完即止</p>
+                </div>
+                <div class="prize_div">
+                    <div class="prize_img_box">
+                        <img class="prize_img" alt="" src="images/prize_3.jpg" />
+                        <div class="prize_bar">
+                            <img alt="" src="images/prize_bar.png" />
+                            <h3>专家礼品</h3>
+                            <h4>3</h4>
+                        </div>
+                    </div>
+                    <h2>炫酷桌面小音响</h2>
+                    <p>数量：随机发送，送完即止</p>
+                </div>
+                <div class="prize_div">
+                    <div class="prize_img_box">
+                        <img class="prize_img" alt="" src="images/prize_4.jpg" />
+                        <div class="prize_bar">
+                            <img alt="" src="images/prize_bar.png" />
+                            <h3>专家礼品</h3>
+                            <h4>4</h4>
+                        </div>
+                    </div>
+                    <h2>高档沐浴套装</h2>
+                    <p>数量：随机发送，送完即止</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page_bottom">
+        <div class="copyright_statement">
+            Copyright ©2018 All rights reserved 德国会议促进局官方网站 版权所有 （京ICP备13034256号-2）
+        </div>
+        <div class="bottom_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <div class="bottom_center">
+                <div class="wechat">
+                    <img class="wechat_icon" alt="" src="images/wechat.png" />
+                    <img class="wechat_code dis_n" alt="" src="images/wechat_code.jpg" />
+                </div>
+                <a href="https://www.linkedin.com/company/german-convention-bureau/"><img class="bottom_icon" alt="" src="images/in.png" /></a>
+                <ul>
+                    <li>订阅</li>
+                    <li>版权和隐私</li>
+                    <li>网站地图</li>
+                    <li class="to_top">回到顶端</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

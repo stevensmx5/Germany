@@ -1148,3 +1148,213 @@ body{
 .credential_page .credential_box .send_btn_box .cancel_btn:active{
     background-color:#b6b6b6;
 }
+/*用户中心*/
+.userinfo_box{
+    width:100%;
+    float:left;
+    background-color:#e86666;
+    position:relative;
+}
+.userinfo_box .user_pohoto_box{
+    width:100px;
+    float:left;
+    margin-left:50%;
+    transform:translateX(-50px);
+    position:relative;
+    z-index:10;
+}
+.userinfo_box .user_pohoto_box img{
+    width:70px;
+    height:70px;
+    float:left;
+    margin:20px 0 0 15px;
+    border-radius:50%;
+}
+.userinfo_box .user_pohoto_box h2{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:20px;
+    color:#94c51b;
+    text-align:center;
+    margin-top:10px;
+}
+.userinfo_box .user_pohoto_box .percent_box{
+    width:100%;
+    height:8px;
+    float:left;
+    border-radius:4px;
+    background-color:#fff;
+}
+.userinfo_box .user_pohoto_box .percent_box .percent_div{
+    width:0;
+    height:8px;
+    float:left;
+    border-radius:4px;
+    background-color:#94c51b;
+    -moz-transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    transition: all 0.5s 0s;
+}
+.userinfo_box .user_pohoto_box p{
+    width:100%;
+    float:left;
+    font-size:10px;
+    color:#fff;
+    line-height:20px;
+    text-align:center;
+}
+.userinfo_box h3,
+.userinfo_box h4{
+    width:50%;
+    font-size:14px;
+    line-height:20px;
+    color:#fff;
+    box-sizing:border-box;
+    position:absolute;
+    top:45px;
+}
+.userinfo_box h3{
+    padding-right:70px;
+    left:0;
+    text-align:right;
+}
+.userinfo_box h4{
+    padding-left:70px;
+    right:0;
+    text-align:left;
+}
+.ucenter_num_box{
+    width:100%;
+    float:left;
+    background-color:#fff;
+    border-top:1px solid #fcebeb;
+    border-bottom:1px solid #f6c5c5;
+    padding:5px 0;
+}
+.ucenter_num_box .ucenter_num_div{
+    width:33.33%;
+    float:left;
+}
+.ucenter_num_box .ucenter_num_div h2,
+.ucenter_num_box .ucenter_num_div p{
+    width:100%;
+    float:left;
+    color:#333;
+    text-align:center;
+}
+.ucenter_num_box .ucenter_num_div h2{
+    font-size:12px;
+    line-height:16px;
+}
+.ucenter_num_box .ucenter_num_div p{
+    font-size:10px;
+    line-height:14px;
+}
+.ucenter_lesson_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:25px 40px;
+    background:url(../images/ucenter_bg.jpg) no-repeat top left #ededed;
+    background-size:100% auto;
+}
+.ucenter_lesson_box h1{
+    width:100%;
+    float:left;
+    font-size:18px;
+    line-height:20px;
+    color:#231815;
+    text-align:center;
+    margin-bottom:15px;
+}
+.ucenter_lesson_box .lesson_box{
+    width:100%;
+    float:left;
+    background-color:#fff;
+    margin-bottom:16px;
+}
+.ucenter_lesson_box .lesson_box img{
+    width:100%;
+    float:left;
+    border-bottom:2px solid #f40002;
+}
+.ucenter_lesson_box .lesson_box .lesson_text{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:10px;
+}
+.ucenter_lesson_box .lesson_box .lesson_text h2{
+    width:25%;
+    float:left;
+    font-size:30px;
+    line-height:30px;
+    color:#ededed;
+    font-style:italic
+}
+.ucenter_lesson_box .lesson_box .lesson_text h3{
+    width:75%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#231815;
+    margin-top:5px;
+}
+.ucenter_lesson_box .lesson_box .lesson_text .lesson_percent{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:25%;
+}
+.ucenter_lesson_box .lesson_box .lesson_text .lesson_percent p{
+    float:left;
+    font-size:14px;
+    line-height:50px;
+    color:#231815;
+    margin-right:8px;
+}
+.ucenter_lesson_box .lesson_box .lesson_text .lesson_percent .percent_round{
+    float:left;
+    position:relative;
+}
+.ucenter_lesson_box .lesson_box .lesson_text .lesson_percent .circle-text {
+    color: #80ba27;
+}
+.ucenter_lesson_box .lesson_box .lesson_text .lesson_percent .circle-text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+.lesson_text .lesson_percent .lesson_btn{
+    width:80px;
+    float:right;
+    font-size:16px;
+    line-height:36px;
+    margin:7px 0;
+    border-radius:3px;
+    text-align:center;
+    color:#fff;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.lesson_text .lesson_percent .go_study{
+    background-color:#94c51b;
+}
+.lesson_text .lesson_percent .begin_study{
+    background-color:#312927;
+}
+.lesson_text .lesson_percent .finish_study{
+    background-color:#f40002;
+}
+.lesson_text .lesson_percent .go_study:active{
+    background-color:#94d530;
+}
+.lesson_text .lesson_percent .begin_study:active{
+    background-color:#777;
+}
+.lesson_text .lesson_percent .finish_study:active{
+    background-color:#d90002;
+}
