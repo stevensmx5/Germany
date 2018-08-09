@@ -10,7 +10,14 @@
     <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
     <script type="text/javascript">
         $(function () {
-
+            $('.wechat_icon').click(function () {
+                var dis = $('.wechat_code').css("display");
+                if (dis == 'none') {
+                    $('.wechat_code').removeClass('dis_n');
+                }else if(dis=='block'){
+                    $('.wechat_code').addClass('dis_n');
+                }
+            });
             //右上角菜单点击事件
             $('.menu_btn').click(function () {
                 var l = $('.menu_body').attr('class');
@@ -34,40 +41,28 @@
                     $(this).parent('.lesson_bar').addClass('active');
                     $(this).siblings('ul').slideDown(500);
                 }
-
+                
             });
             //课程列表二级菜单点击事件
             $('.lesson_bar li').click(function () {
                 $('.lesson_bar li').removeClass('active');
                 $(this).addClass('active');
             });
-
-            var percent_num = $('.user_pohoto_box h2').data('percent') + '%';
-            $('.percent_box .percent_div').css('width', percent_num);
-
-            $('#lesson_percent_1').circliful();
-            $('#lesson_percent_2').circliful();
         });
     </script>
-    <style>
-        body {
-            background: url(images/chapter_bg.png) no-repeat #fff;
-            background-size: 100% auto;
-            background-position:0 50px;
-        }
-    </style>
 </head>
 <body>
     <div class="top_bar">
         <img class="top_logo" alt="" src="images/top_logo.png" />
         <img class="menu_btn" alt="" src="images/menu_icon.png" />
     </div>
-
+    <!--右侧菜单-->
     <div class="menu_body">
         <div class="user_box">
             <img class="user_icon" alt="" src="images/user_photo.png" />
             <div class="userinfo_box">
-                <!--用户信息开始-->
+                <!--注释的部分为单独的登陆按钮
+                <div class="login_btn f_l">登录</div>-->
                 <h2>欢迎你，李阳！</h2>
                 <div class="row">
                     <div class="ucenter_btn f_l">个人中心</div>
@@ -83,7 +78,6 @@
                         <p>修改密码</p>
                     </div>
                 </div>
-                <!--用户信息结束-->
             </div>
         </div>
         <div class="lesson_list">
@@ -91,17 +85,17 @@
                 <img alt="" src="images/bookmark_icon.png" />
                 <h2>进入课堂</h2>
             </div>
-            <div class="lesson_div">
+            <div class="lesson_bar">
                 <h2>.01</h2>
                 <h3>会奖旅游目的地——德国</h3>
                 <img alt="" src="images/arrow_bottom.png" />
             </div>
-            <div class="lesson_div">
+            <div class="lesson_bar">
                 <h2>.02</h2>
                 <h3>会奖之都——柏林</h3>
                 <img alt="" src="images/arrow_bottom.png" />
             </div>
-            <div class="lesson_div">
+            <div class="lesson_bar">
                 <h2>.03</h2>
                 <h3>德国会奖精选</h3>
                 <img alt="" src="images/arrow_bottom.png" />
@@ -114,29 +108,45 @@
                     <li>TEST</li>
                 </ul>
             </div>
-            <div class="lesson_div">
+            <div class="lesson_bar">
                 <h2>.04</h2>
                 <h3>德国会议促进局</h3>
                 <img alt="" src="images/arrow_bottom.png" />
             </div>
         </div>
     </div>
-
-    <div class="chapter_body">
-        <div class="chapter_content">
-            <h1>TEST——旅游活动服务团队</h1>
-            <div class="chapter_text">
-                <p>作为一家在商务旅行和活动管理方面拥有超过25年经验的全方位服务公司，我们是您为参加交易会和大会的商务旅行安排酒店预订和活动管理的合作伙伴</p>
-                <p>
-                    旅游（Travel） - 战略采购管理以及来自市场引领者的交易会和大会的个性酒店预订。
-                    <img alt="" src="images/chapter_img_1.jpg" />
-                    <em>©Dusseldorf Marketing & Tourismus GmbH</em>
-                </p>
+    <!--右侧菜单结束-->
+    <div class="prize_title">
+        <img alt="" src="images/prize_icon.png" />
+        <p>礼品</p>
+    </div>
+    <div class="prize_page">
+        <div class="prize_exchange_box">
+            <div class="prize_exchange_div">
+                <img class="prize_img" alt="" src="images/prize_zj.jpg" />
+                <div class="prize_exchange_bar">
+                    <img alt="" src="images/prize_name_bar.png" />
+                    <h2>专家礼品</h2>
+                    <h3>双立人（ZWILLING）多工具钥匙环</h3>
+                </div>
             </div>
-
-            <div class="chapet_btn_row">
-                <div class="chapter_btn">本节测验</div>
-                <div class="chapter_btn">下一节</div>
+            <div class="prize_exchange_text">
+                <h1>礼品领取</h1>
+                <p>请填写以下信息，以便我们为你寄送礼品：</p>
+                <div class="prize_input name">
+                    <h2>姓名</h2>
+                    <input type="text" />
+                </div>
+                <div class="prize_input tel">
+                    <h2>电话</h2>
+                    <input type="tel" />
+                </div>
+                <div class="prize_input address">
+                    <h2>地址</h2>
+                    <input type="text" />
+                </div>
+                <div class="prize_input_btn">取消</div>
+                <div class="prize_input_btn">确定</div>
             </div>
         </div>
     </div>
@@ -162,5 +172,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
